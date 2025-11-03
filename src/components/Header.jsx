@@ -6,9 +6,9 @@ export default function Header() {
   const isActive = (path) => location.pathname === path
   
   return (
-    <header className="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 bg-white/10 dark:bg-navy/10 backdrop-blur-md">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/50 dark:border-white/10 px-6 py-4">
+        <div className="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/20 dark:border-white/20 px-6 py-4">
           <Link to="/" className="flex items-center gap-3 text-navy dark:text-white">
             <div className="text-primary">
               <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>
