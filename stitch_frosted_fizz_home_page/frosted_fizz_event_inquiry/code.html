@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Frosted Fizz - Event Inquiry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ff6ba6",
+              "background-light": "#f8f5f7",
+              "background-dark": "#230f17",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#181014] dark:text-background-light">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 dark:border-primary/30 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 md:px-10 py-3">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6 md:size-8">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clippath id="clip0_6_319"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-[#181014] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Frosted Fizz</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-[#181014] dark:text-background-light text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-[#181014] dark:text-background-light text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About</a>
+<a class="text-[#181014] dark:text-background-light text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Menu</a>
+<a class="text-[#181014] dark:text-background-light text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Gallery</a>
+<a class="text-[#181014] dark:text-background-light text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-[#181014] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-opacity" href="#inquiry-form">
+<span class="truncate">Book Now</span>
+</a>
+</div>
+<button class="lg:hidden text-[#181014] dark:text-white">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</header>
+<main class="flex-grow">
+<!-- HeroSection -->
+<div class="@container">
+<div class="@[480px]:p-4">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-center justify-center p-4 text-center" data-alt="Close-up of a colorful, frosted dessert with sprinkles." style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(35, 15, 23, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQYipJGJscZBWM0LkCKT9SGo6Y57J_zuDGTNz2lDIwFqYjHDLSxaxNspPeOCb0-fI473Yjq5lV1o8ICV8KJFGCt7bx4tsjACdRoPEBt97hYQ8yAIRobEkg33r0yg1Jvr14I8-rpZgnJBajvK-691OxQD9JhWF_0GrRm-UNNOS0wagABNMAddQFYrWHfHpdEXqBBYb11_0CwDdj9rJSKC3mGqi2WMN3kWgWxM8OqbGKhkcODPdZVFh7NGuLMJ1zIpuqbhyctKoyvA");'>
+<div class="flex flex-col gap-2">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+                            Let's Make Your Event Sweeter
+                        </h1>
+<h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base max-w-lg mx-auto">
+                            Fill out the details below, and our team will get back to you with a custom quote designed just for your special occasion.
+                        </h2>
+</div>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-[#181014] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base hover:bg-opacity-90 transition-opacity" href="#inquiry-form">
+<span class="truncate">Get a Quote</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Inquiry Form Section -->
+<section class="w-full max-w-4xl mx-auto py-12 md:py-20 px-4" id="inquiry-form">
+<div class="flex flex-col items-center">
+<!-- PageHeading -->
+<div class="w-full flex flex-wrap justify-center gap-3 p-4 text-center">
+<p class="text-[#181014] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Event Inquiry Form</p>
+</div>
+<div class="w-full mt-8 p-6 md:p-8 bg-white dark:bg-background-dark/50 border border-primary/20 dark:border-primary/30 rounded-xl shadow-lg">
+<form action="#" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6" method="POST">
+<!-- Full Name -->
+<div class="flex flex-col">
+<label class="text-[#181014] dark:text-background-light text-base font-medium leading-normal pb-2" for="full-name">Full Name</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#181014] dark:text-background-light focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-primary/20 dark:border-primary/30 bg-background-light/50 dark:bg-background-dark h-14 placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal" id="full-name" name="full-name" placeholder="Enter your full name" type="text"/>
+</div>
+<!-- Contact Number -->
+<div class="flex flex-col">
+<label class="text-[#181014] dark:text-background-light text-base font-medium leading-normal pb-2" for="contact-number">Contact Number
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#181014] dark:text-background-light focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-primary/20 dark:border-primary/30 bg-background-light/50 dark:bg-background-dark h-14 placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal" id="contact-number" name="contact-number" placeholder="Enter your contact number" type="tel"/>
+</label></div>
+<!-- Event Type -->
+<div class="flex flex-col">
+<label class="text-[#181014] dark:text-background-light text-base font-medium leading-normal pb-2" for="event-type">Event Type</label>
+<div class="relative">
+<select class="form-select appearance-none flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#181014] dark:text-background-light focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-primary/20 dark:border-primary/30 bg-background-light/50 dark:bg-background-dark h-14 placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal" id="event-type" name="event-type">
+<option>Wedding</option>
+<option>Corporate</option>
+<option>Birthday</option>
+<option>Other</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#181014] dark:text-background-light">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Expected Guests -->
+<div class="flex flex-col">
+<label class="text-[#181014] dark:text-background-light text-base font-medium leading-normal pb-2" for="expected-guests">Expected Guests</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#181014] dark:text-background-light focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-primary/20 dark:border-primary/30 bg-background-light/50 dark:bg-background-dark h-14 placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal" id="expected-guests" name="expected-guests" placeholder="e.g., 150" type="number"/>
+</div>
+<!-- Event Date -->
+<div class="flex flex-col">
+<label class="text-[#181014] dark:text-background-light text-base font-medium leading-normal pb-2" for="event-date">Event Date</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#181014] dark:text-background-light focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-primary/20 dark:border-primary/30 bg-background-light/50 dark:bg-background-dark h-14 placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal" id="event-date" name="event-date" type="date"/>
+</div>
+<!-- City -->
+<div class="flex flex-col">
+<label class="text-[#181014] dark:text-background-light text-base font-medium leading-normal pb-2" for="city">City</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#181014] dark:text-background-light focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-primary/20 dark:border-primary/30 bg-background-light/50 dark:bg-background-dark h-14 placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal" id="city" name="city" placeholder="e.g., Mumbai" type="text"/>
+</div>
+<!-- Budget Range -->
+<div class="flex flex-col md:col-span-2">
+<label class="text-[#181014] dark:text-background-light text-base font-medium leading-normal pb-2" for="budget">Budget Range (INR)</label>
+<input class="w-full h-2 bg-primary/20 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 form-range accent-primary" id="budget" max="500000" min="10000" name="budget" step="1000" type="range"/>
+<div class="flex justify-between text-xs text-gray-600 dark:text-gray-400 mt-2">
+<span>₹10,000</span>
+<span>₹5,00,000+</span>
+</div>
+</div>
+<!-- Notes -->
+<div class="flex flex-col md:col-span-2">
+<label class="text-[#181014] dark:text-background-light text-base font-medium leading-normal pb-2" for="notes">Notes</label>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-xl text-[#181014] dark:text-background-light focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-primary/20 dark:border-primary/30 bg-background-light/50 dark:bg-background-dark placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal" id="notes" name="notes" placeholder="Any special requests or details? Let us know here!" rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="md:col-span-2 flex justify-center mt-4">
+<button class="flex min-w-[180px] w-full md:w-auto max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-primary text-[#181014] text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-opacity" type="submit">
+<span class="truncate">Send Inquiry</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark text-background-light py-10 px-4 md:px-10">
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+<div>
+<h3 class="text-lg font-bold text-white mb-2">Frosted Fizz</h3>
+<p class="text-sm text-gray-400">Crafting sweet memories for your special events.</p>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-2">Quick Links</h4>
+<ul class="space-y-1">
+<li><a class="text-sm text-gray-400 hover:text-primary" href="#">About Us</a></li>
+<li><a class="text-sm text-gray-400 hover:text-primary" href="#">Menu</a></li>
+<li><a class="text-sm text-gray-400 hover:text-primary" href="#">Gallery</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-2">Connect With Us</h4>
+<div class="flex justify-center md:justify-start space-x-4">
+<a class="text-gray-400 hover:text-primary" data-alt="Facebook icon" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-gray-400 hover:text-primary" data-alt="Instagram icon" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.792 2.792c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-2.792 2.792c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-2.792-2.792c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 012.792-2.792c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm6.406-11.845a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-500">
+<p>© 2024 Frosted Fizz. All Rights Reserved. | <a class="hover:text-primary" href="#">Privacy Policy</a></p>
+</div>
+</footer>
+</div>
+<!-- Floating Action Button -->
+<a class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform" data-alt="WhatsApp chat button" href="https://wa.me/910000000000" target="_blank">
+<svg class="w-8 h-8" fill="currentColor" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.8 0-67.6-9.5-97.8-26.7l-7-4.1-72.5 19.1 19.4-70.6-4.5-7.3c-18.4-29.8-28.2-63.6-28.2-98.8 0-106.1 86.1-192.2 192.2-192.2 52.1 0 100.4 20.2 136.2 56s56 84.1 56 136.2c0 106.1-86.1 192.2-192.2 192.2zM223.9 148.2c-1.3 0-2.5.2-3.7.4-1.2.2-2.4.4-3.6.7-1.2.3-2.4.6-3.6.9-1.2.3-2.3.6-3.5.9-1.1.3-2.3.6-3.4.9-1.1.3-2.2.6-3.3.9-1.1.3-2.2.6-3.3.9-1.1.3-2.1.5-3.2.8-1.1.3-2.1.5-3.2.8-1.1.3-2.1.5-3.1.8-1.1.3-2.1.5-3.1.8-1 .2-2 .5-3 .7-1 .3-1.9.5-2.9.8-1 .2-1.9.5-2.9.7-1 .2-1.9.4-2.8.7-1 .2-1.9.4-2.8.6-1 .2-1.9.4-2.8.6-1 .2-1.9.4-2.8.6-.9.2-1.8.4-2.7.6-.9.2-1.8.4-2.7.6-.9.2-1.8.3-2.7.5-.9.2-1.7.4-2.6.5-.9.2-1.7.4-2.6.5-.9.2-1.7.3-2.6.5-.8.2-1.6.3-2.5.5-.8.2-1.6.3-2.5.5-.8.2-1.6.3-2.4.4-.8.2-1.6.3-2.4.4-.8.1-1.6.3-2.4.4-.8.1-1.5.3-2.3.4-.8.1-1.5.2-2.3.4-.8.1-1.5.2-2.3.3-.7.1-1.4.2-2.2.3-.7.1-1.4.2-2.1.3-.7.1-1.4.2-2.1.3-.7.1-1.4.2-2.1.2-.7.1-1.3.1-2 .2-.7.1-1.3.1-2 .2-.6.1-1.3.1-1.9.2-.6.1-1.3.1-1.9.2-.6.1-1.2.1-1.8.1-.6 0-1.2.1-1.8.1-.6 0-1.2 0-1.8.1s-1.1 0-1.7.1c-.6 0-1.1 0-1.7.1-.5 0-1.1 0-1.6.1-.5 0-1.1 0-1.6 0-.5 0-1 .1-1.5.1-.5 0-1 .1-1.5.1s-1 .1-1.5.1-.9.1-1.4.1c-.5 0-.9.1-1.4.1-.5 0-.9.1-1.3.1-.4 0-.9.1-1.3.1-.4 0-.9.1-1.3.1-.4 0-.8.1-1.2.1-.4 0-.8.1-1.2.1s-.8.1-1.2.1-.8.1-1.1.1c-.4 0-.8.1-1.1.1-.4 0-.8.1-1.1.1-.3 0-.7.1-1.1.1-.3 0-.7.1-1 .1-.3 0-.7.1-1 .1-.3 0-.7.1-1 .1-.3 0-.6.1-.9.1-.3 0-.6.1-.9.1-.3 0-.6.1-.9.1-.3 0-.6.1-.8.1-.3 0-.6.1-.8.1-.2 0-.5.1-.8.1-.2 0-.5.1-.7.1-.2 0-.5.1-.7.1-.2 0-.5.1-.7.1-.2 0-.4.1-.6.1-.2 0-.4.1-.6.1-.2 0-.4.1-.6.1-.2 0-.4.1-.6.1s-.4.0-.5.1-.4.0-.5.1-.4.0-.5.1-.3.0-.5.1-.3.0-.5.1-.3.0-.5.1-.3.0-.4.1-.3.0-.4.1-.3.0-.4.1-.2.0-.4.1-.2.0-.4.1-.2.0-.3.1-.2.0-.3.1-.2.0-.3.1-.2.0-.3.1-.2.0-.3.1-.1.0-.2.0-.1.0-.2.0-.1.0-.2.0-.1.0-.2.0-.1.0-.2.0-.1.0-.2.0-.1.0-.2.0-.1.0-.2.0-.1.0-.1.0L223.9 148.2z"></path>
+</svg>
+</a>
+</body></html>

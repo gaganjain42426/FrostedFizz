@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Frosted Fizz - Event Catering</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF6AA6",
+                        "secondary": "#66D6FF",
+                        "accent": "#FF9ECC",
+                        "navy": "#071740",
+                        "background-light": "#f8f5f7",
+                        "background-dark": "#230f17",
+                    },
+                    fontFamily: {
+                        "display": ["Poppins", "sans-serif"],
+                        "body": ["Nunito", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    animation: {
+                        'float-1': 'float 12s ease-in-out infinite',
+                        'float-2': 'float 15s ease-in-out infinite',
+                        'float-3': 'float 10s ease-in-out infinite',
+                        'float-4': 'float 18s ease-in-out infinite',
+                        'text-pop': 'text-pop 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
+                        'bg-pan': 'bg-pan 10s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(-20px) rotate(-3deg)' },
+                            '50%': { transform: 'translateY(20px) rotate(3deg)' },
+                        },
+                        'text-pop': {
+                            '0%': { transform: 'scale(0.8)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' },
+                        },
+                        'bg-pan': {
+                            '0%': { 'background-position': '0% 50%' },
+                            '100%': { 'background-position': '100% 50%' },
+                        }
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+        .hero-bg {
+            background-size: 200% 200%;
+            animation: bg-pan 10s ease-in-out infinite alternate;
+        }
+        .preserve-3d {
+             transform-style: preserve-3d;
+        }
+        .perspective {
+            perspective: 1000px;
+        }
+        .parallax {
+            transform: translateZ(-100px) scale(2);
+        }
+        .icon-shadow {
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden perspective">
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="max-w-6xl mx-auto">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/50 dark:border-white/10 px-6 py-4">
+<div class="flex items-center gap-3 text-navy dark:text-white">
+<div class="text-primary">
+<span class="material-symbols-outlined" style="font-size: 28px;">
+                                icecream
+                            </span>
+</div>
+<h2 class="text-xl font-bold">Frosted Fizz</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-8">
+<a class="text-navy dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-navy dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Our Menu</a>
+<a class="text-navy dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Gallery</a>
+<a class="text-navy dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">About Us</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-navy text-sm font-bold leading-normal tracking-[0.015em] hover:bg-accent transition-colors">
+<span class="truncate">Contact</span>
+</button>
+</div>
+<button class="md:hidden text-navy dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow preserve-3d">
+<div class="relative overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/10 dark:from-navy dark:via-background-dark dark:to-navy/80 py-24 md:py-40 isolate">
+<div class="absolute inset-0 z-0 hero-bg parallax bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/10 dark:from-navy dark:via-background-dark dark:to-navy/80"></div>
+<div class="absolute inset-0 z-10 opacity-80 dark:opacity-60">
+<span class="material-symbols-outlined absolute top-[10%] left-[5%] text-5xl text-primary animate-float-1 icon-shadow" style="font-size: 60px;">icecream</span>
+<span class="material-symbols-outlined absolute top-[20%] right-[10%] text-6xl text-secondary animate-float-2 icon-shadow" style="font-size: 72px;">local_bar</span>
+<span class="material-symbols-outlined absolute bottom-[15%] left-[20%] text-4xl text-accent animate-float-3 icon-shadow" style="font-size: 48px;">cake</span>
+<span class="material-symbols-outlined absolute bottom-[25%] right-[25%] text-5xl text-primary/80 animate-float-4 icon-shadow" style="font-size: 64px;">cookie</span>
+<span class="material-symbols-outlined absolute top-[60%] left-[15%] text-6xl text-secondary/80 animate-float-2 icon-shadow" style="font-size: 68px;">liquor</span>
+<span class="material-symbols-outlined absolute top-[50%] right-[30%] text-4xl text-accent/90 animate-float-1 icon-shadow" style="font-size: 44px;">cake</span>
+</div>
+<div class="relative z-20 max-w-6xl mx-auto px-6">
+<div class="flex flex-col gap-6 text-center items-center">
+<h1 class="text-navy dark:text-white text-5xl font-black leading-tight tracking-tighter md:text-7xl max-w-4xl animate-text-pop">
+<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Cool Desserts,</span> Chill Vibes, Event Ready.
+                        </h1>
+<h2 class="font-body text-navy/80 dark:text-gray-300 text-base font-normal leading-normal md:text-xl max-w-2xl animate-text-pop [animation-delay:200ms]">
+                            The perfect dessert &amp; beverage partner for your events, bringing sweet delights and refreshing sips to every occasion.
+                        </h2>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 mt-6 bg-primary text-navy text-lg font-bold leading-normal tracking-[0.015em] hover:bg-accent transition-all duration-300 ease-in-out shadow-lg shadow-primary/40 hover:shadow-2xl hover:shadow-primary/50 hover:scale-110">
+<span class="truncate">Book Us for Your Event</span>
+</button>
+</div>
+</div>
+</div>
+<section class="bg-background-light dark:bg-background-dark py-16 md:py-24">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-navy dark:text-white">What We Offer</h2>
+<p class="mt-4 text-lg text-navy/70 dark:text-gray-300 max-w-2xl mx-auto font-body">A delightful selection of treats guaranteed to make your event unforgettable.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<a class="group block" href="/menu#soft-serve">
+<div class="bg-white dark:bg-navy/30 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-8 text-center flex flex-col items-center border border-gray-200/50 dark:border-white/10">
+<div class="flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 mb-6 group-hover:bg-primary/20 transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-5xl">icecream</span>
+</div>
+<h3 class="text-xl font-bold text-navy dark:text-white mb-2">Soft Serve Ice Cream</h3>
+<p class="font-body text-navy/70 dark:text-gray-400">Creamy, dreamy, and swirled to perfection. Our soft serves are a classic favorite for all ages.</p>
+</div>
+</a>
+<a class="group block" href="/menu#milkshakes">
+<div class="bg-white dark:bg-navy/30 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-8 text-center flex flex-col items-center border border-gray-200/50 dark:border-white/10">
+<div class="flex items-center justify-center h-20 w-20 rounded-full bg-secondary/10 mb-6 group-hover:bg-secondary/20 transition-colors duration-300">
+<span class="material-symbols-outlined text-secondary text-5xl">local_bar</span>
+</div>
+<h3 class="text-xl font-bold text-navy dark:text-white mb-2">Milkshakes</h3>
+<p class="font-body text-navy/70 dark:text-gray-400">Thick, luscious, and blended with premium ingredients. Sip on pure happiness with our variety of flavors.</p>
+</div>
+</a>
+<a class="group block" href="/menu#waffles">
+<div class="bg-white dark:bg-navy/30 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-8 text-center flex flex-col items-center border border-gray-200/50 dark:border-white/10">
+<div class="flex items-center justify-center h-20 w-20 rounded-full bg-accent/20 mb-6 group-hover:bg-accent/30 transition-colors duration-300">
+<span class="material-symbols-outlined text-accent text-5xl">bakery_dining</span>
+</div>
+<h3 class="text-xl font-bold text-navy dark:text-white mb-2">Waffles</h3>
+<p class="font-body text-navy/70 dark:text-gray-400">Crispy on the outside, fluffy on the inside. Served hot with your favorite toppings and sauces.</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+<div class="bg-background-light dark:bg-background-dark py-16 md:py-24">
+<div class="max-w-6xl mx-auto px-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+<div class="flex flex-col items-center gap-3 rounded-xl p-6 bg-white dark:bg-navy/30 border border-gray-200/50 dark:border-white/10">
+<div class="text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">celebration</span>
+</div>
+<p class="text-navy dark:text-gray-300 text-base font-medium leading-normal">Events Catered</p>
+<p class="text-navy dark:text-white text-3xl font-bold leading-tight">100+</p>
+</div>
+<div class="flex flex-col items-center gap-3 rounded-xl p-6 bg-white dark:bg-navy/30 border border-gray-200/50 dark:border-white/10">
+<div class="text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">groups</span>
+</div>
+<p class="text-navy dark:text-gray-300 text-base font-medium leading-normal">Happy Guests Served</p>
+<p class="text-navy dark:text-white text-3xl font-bold leading-tight">1500+</p>
+</div>
+<div class="flex flex-col items-center gap-3 rounded-xl p-6 bg-white dark:bg-navy/30 border border-gray-200/50 dark:border-white/10">
+<div class="text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">health_and_safety</span>
+</div>
+<p class="text-navy dark:text-gray-300 text-base font-medium leading-normal">Hygiene Rating</p>
+<p class="text-navy dark:text-white text-3xl font-bold leading-tight">5-Star</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-96 bg-background-light dark:bg-background-dark"></div>
+</main>
+<div class="fixed bottom-6 right-6 z-40">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 w-14 bg-[#25D366] text-white shadow-lg hover:bg-[#128C7E] transition-colors">
+<span class="material-symbols-outlined">
+                    call
+                </span>
+</button>
+</div>
+<footer class="bg-white dark:bg-navy/30 border-t border-gray-200/50 dark:border-white/10">
+<div class="max-w-6xl mx-auto px-6 py-12 text-center">
+<div class="flex flex-col items-center gap-4 text-navy dark:text-white mb-8">
+<div class="text-primary">
+<span class="material-symbols-outlined" style="font-size: 36px;">
+                                icecream
+                            </span>
+</div>
+<h2 class="text-2xl font-bold">Frosted Fizz</h2>
+<p class="text-navy/70 dark:text-gray-400 font-body">Sweet delights for your memorable events.</p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 mb-8">
+<a class="text-navy/80 dark:text-gray-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-navy/80 dark:text-gray-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Our Menu</a>
+<a class="text-navy/80 dark:text-gray-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Gallery</a>
+<a class="text-navy/80 dark:text-gray-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-navy/80 dark:text-gray-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex justify-center gap-6 mb-8">
+<a class="text-navy/80 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="text-navy/80 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">thumb_up</span>
+</a>
+</div>
+<div class="border-t border-gray-200/50 dark:border-white/10 pt-6">
+<p class="text-navy/60 dark:text-gray-500 text-sm font-body">© 2024 Frosted Fizz. All Rights Reserved. <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a> · <a class="hover:text-primary transition-colors" href="#">Terms of Service</a></p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

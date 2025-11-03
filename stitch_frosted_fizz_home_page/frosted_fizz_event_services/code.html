@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Frosted Fizz - Event Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Nunito:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ff6ba6",
+              "background-light": "#f8f5f7",
+              "background-dark": "#230f17",
+              "text-light": "#181014",
+              "text-dark": "#f8f5f7",
+              "text-muted-light": "#8d5e71",
+              "text-muted-dark": "#a98fa0",
+              "card-light": "#ffffff",
+              "card-dark": "#2a141c",
+              "border-light": "#e7dadf",
+              "border-dark": "#4a2c3a",
+            },
+            fontFamily: {
+              display: ["Poppins", "sans-serif"],
+              body: ["Nunito", "sans-serif"],
+              sans: ["Plus Jakarta Sans", "Noto Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px"
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      body {
+        font-family: "Nunito", "Plus Jakarta Sans", "Noto Sans", sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-body text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Floating Action Button -->
+<div class="fixed bottom-6 right-6 z-50">
+<a class="flex h-16 w-16 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-[#25D366] text-white shadow-lg" href="#">
+<svg class="h-8 w-8" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+<path d="M14.05 6.02a10.99 10.99 0 0 1 5.93 5.93"></path>
+<path d="M14.05 2.02a15 15 0 0 1 9.93 9.93"></path>
+</svg>
+</a>
+</div>
+<div class="layout-container flex h-full grow flex-col">
+<!-- Sticky TopNavBar -->
+<div class="sticky top-0 z-40 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="px-4 lg:px-40 flex flex-1 justify-center py-0">
+<div class="layout-content-container flex flex-col w-full max-w-[1280px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark px-4 lg:px-10 py-3">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"></path>
+</g>
+<defs>
+<clippath id="clip0_6_319">
+<rect fill="white" height="48" width="48"></rect>
+</clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-[-0.015em] font-display">Frosted Fizz</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-semibold leading-normal font-display text-text-light dark:text-text-dark" href="#">Home</a>
+<a class="text-sm font-semibold leading-normal font-display text-text-light dark:text-text-dark" href="#">About</a>
+<a class="text-sm font-semibold leading-normal font-display text-text-light dark:text-text-dark" href="#">Menu</a>
+<a class="text-primary text-sm font-bold leading-normal font-display" href="#">Event Services</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em] font-display">
+<span class="truncate">Book Now</span>
+</button>
+</div>
+<div class="md:hidden">
+<button class="text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+</div>
+</div>
+</div>
+<main class="flex flex-col items-center w-full">
+<div class="w-full max-w-[1280px] px-4 py-5 lg:px-40 lg:py-10">
+<!-- Hero Section -->
+<div class="@container">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[480px] lg:min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4 text-center" data-alt="Vibrant scene of desserts being served at a lively outdoor event." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkEEsZ5QytlYLx8XM5r_NkcXTxIEaw54BOVCOgEMnhWxTecdkCSHtMz3Y4nAz8nx3dgY5SghHmNlESmaq22pE_g8WBUjBRcytVv7lfGp55QvuPVYUq9QXM7zUl6hbhkcPO76f-7pIx_UeZde78tqT7zvwWaReo7Fkaqm2a5I1vaE-Yc49kVrFVHhvLJG7Y7yDR37WoZmIJED5nzHZ0U3inXA0MNVKXsDgzNjhTLZTBMKL13QGk6GnSKA_8mrM3FtHpvZli6wwryg");'>
+<div class="flex flex-col gap-2">
+<h1 class="text-white text-4xl font-bold leading-tight tracking-[-0.033em] @[480px]:text-5xl font-display">Fresh Desserts, Unforgettable Events.</h1>
+<h2 class="text-white text-base font-normal leading-normal @[480px]:text-lg">We bring the counter, staff, and vibes — fresh desserts live at your event.</h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base font-display">
+<span class="truncate">Plan Your Event</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Feature Section "How It Works" -->
+<div class="flex flex-col gap-10 px-4 py-16 lg:py-24 @container">
+<div class="flex flex-col gap-4 text-center">
+<h2 class="text-text-light dark:text-text-dark tracking-tight text-3xl font-bold leading-tight @[480px]:text-4xl font-display">How It Works</h2>
+<p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal max-w-[720px] mx-auto">Getting our live dessert experience at your event is as easy as one, two, three!</p>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4 lg:gap-6 p-0">
+<div class="flex flex-1 gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 flex-col text-center items-center">
+<div class="text-primary bg-primary/20 rounded-full p-3 mb-2" data-icon="Calendar">
+<span class="material-symbols-outlined text-3xl">event</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight font-display">Choose Your Event</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Select the type of celebration you're hosting.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 flex-col text-center items-center">
+<div class="text-primary bg-primary/20 rounded-full p-3 mb-2" data-icon="List">
+<span class="material-symbols-outlined text-3xl">restaurant_menu</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight font-display">Customize Your Menu</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Pick your favorite desserts and beverages from our extensive menu.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 flex-col text-center items-center">
+<div class="text-primary bg-primary/20 rounded-full p-3 mb-2" data-icon="Cake">
+<span class="material-symbols-outlined text-3xl">celebration</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight font-display">We Bring the Party</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Our team arrives with everything needed to delight your guests.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Offerings Section -->
+<div class="px-4 py-10">
+<h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] font-display text-center pb-8">Catering for Every Celebration</h2>
+<div class="pb-3">
+<div class="flex flex-wrap justify-center border-b border-border-light dark:border-border-dark px-4 gap-4 md:gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary pb-3 pt-2" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em] font-display">Weddings</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-muted-light dark:text-text-muted-dark pb-3 pt-2" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em] font-display">Birthdays</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-muted-light dark:text-text-muted-dark pb-3 pt-2" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em] font-display">Corporate Gatherings</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-muted-light dark:text-text-muted-dark pb-3 pt-2" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em] font-display">College &amp; School Festivals</p>
+</a>
+</div>
+</div>
+<!-- Event Content -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-10">
+<div class="flex flex-col gap-3 group">
+<div class="overflow-hidden rounded-xl">
+<img class="h-60 w-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="A festive Haldi ceremony setup with yellow decorations and sweets." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEUWko_Si0muiVE85KPGb44tSVXUVEXDjQSb2TeKVz_l1xfKLfUnmsx5LeuXAeNlq0OqbauJhwUD60SayHby_zjC-ELtbaToHastvF0Li-qQkQ2vN78A_I9oulE4gf8V9f5P9B69BFfjCbMXlc6ALUsaCSLoAIdwdiiYLalcDr2gX1OKIio4Ijv0hShAWXlIKGMy3A0o1FCzBoTgkHjiPX-ug1JXfrfuJPSBpwNOsuw9y4ZHMLOqMRJZwIld-iE9Kj8BA8lSRlFw"/>
+</div>
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight font-display">Haldi Ceremony</h3>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="overflow-hidden rounded-xl">
+<img class="h-60 w-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Intricate Mehndi designs on hands, with a celebratory backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYW-7XZUPxGhHGXKcnZPzWpjoZe8Jknf41cUdfcJCwGqKqw3WAYQQP5bf02brXgbV17XwWz_-Vsgp7AIXogfjT9QcXwdoTNj9xWqk6eEGWf1otrxAR7y6w2FDgKPUuPUHusJ229jsiCv_KFWA7T1gk54IacIj4sgcXGQpENAZoRUrbVG0rJKVS2fy3PaBVb2Dmy-vLQCnIQkJ54UgUwLQEgtwQ4L93czcTM1mV653oKCWe-YKtIbam0G5a-davKxt0PbEoop4puA"/>
+</div>
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight font-display">Mehndi Night</h3>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="overflow-hidden rounded-xl">
+<img class="h-60 w-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="People dancing and celebrating at a vibrant Sangeet event." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW1NS2CJ-LudksZBvcP9hyGU-8gL-HvstD5YctonLJm8lGxnunB4kaCE7HbI2suBeVECdqDdps2MkxY7Cs5Nh2xYlW2a1mHKadz6zLh0Z_dhf7h0Qxj_J3zDIiKHU9KeGR09-91icu6r30lRlKhHYekdf2FBgLthwYZzSGOmzoa3oz00tJzI2AJYC4sgPr2thl4plt3QXnkAo887v3xVZSbaq5xmm8XA4GVyIQ6F3ynmcQL7zsd2nmYuBGGWE6qxzIaQ7hD0f7ZA"/>
+</div>
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight font-display">Sangeet</h3>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="overflow-hidden rounded-xl">
+<img class="h-60 w-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="An elegant wedding reception with beautifully set tables and a dessert counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZs9j9zp6DuBcIE5e-lhu8OgZMHcb2Qk70jb5klQoJu3H_MdR-D9UvjqagjQgzzVC5p5-XyxdOcBcTWERdjFSt30Ay4tSSGaCM86NsCffv0hIKK7dcuEM--wRjzHpbQSwlaG102VDOb_Ue8G0RUL5e9hPmMOxju5Cc_JExtAbOF0o3pskmWPKSs2J3bKYilKqsaE1JBnkTKw-jvMN8eUzMFr359iPUNurWowVeFY9tFozXli7hFrXU6WWMcKc1UzHG9Lqm88YjhQ"/>
+</div>
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight font-display">Reception</h3>
+</div>
+</div>
+</div>
+<!-- Service Detail Card -->
+<div class="px-4 py-16 lg:py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center bg-card-light dark:bg-card-dark rounded-xl p-8 lg:p-12 border border-border-light dark:border-border-dark">
+<div class="flex flex-col gap-4">
+<h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-tight font-display">The Complete Frosted Fizz Experience</h2>
+<p class="text-text-muted-light dark:text-text-muted-dark">Forget the hassle. We provide a full-service, all-inclusive dessert catering experience. Our professional team arrives with a beautifully designed counter, all the necessary equipment, and the freshest ingredients to prepare our signature desserts live for your guests. We handle everything from setup to cleanup, so you can focus on enjoying your celebration.</p>
+</div>
+<div class="overflow-hidden rounded-xl">
+<img class="h-full w-full object-cover" data-alt="A friendly staff member serving a colorful dessert from a branded catering counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQjKDXAzoRPCcQYkcJN-UiqFZ6gM7LJEEqwimQfAlpuGvMynt5uvBiSlmh6SACyNhIb7hXdmaPuoZOmNtUdfQzOFU6Q9hAZrVUP_ANy7UTKnxbVNTE9TYF6UlT_F2Gw0yS651x79QCGBfzJJFI_bFW_L9Iir6IQ1h75trZXdTHV5s2oCB0q2ZUwnOywn-GxN8msrWzZ11UNdblGo-9g059k_e4YsgJL4D4WW1DOlDzjrC6hQmb6HmhB1V_7UnKdVZINuLngm9xhQ"/>
+</div>
+</div>
+</div>
+<!-- Photo Gallery Section -->
+<div class="px-4 py-10 text-center">
+<h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] font-display pb-8">See Us in Action</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<img class="h-auto max-w-full rounded-lg object-cover" data-alt="A colorful array of desserts on display at an event." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJZbX8ywWeMqxXANmN0X_KqPxDR1dQZANmPypNYx90IeSHRrd28zSUxScQ-POCSzYQ48D4Uf8PdX05zhdAiqvDO782i_RAqxMnju_PGSDqYq9wA8P8K7PBcVt1z1zLYKUeJFKnfDQK6MULTFmw9_TvGsLPlQN4Y-zhpu31aP13I6ao1C1JtNeMEYUoL50A03tD4yUIGF_BMLwpAtL7uaqqaoqp30KLjDN2TNzCoZYGewiuWkpJ57UDZM91eWNjhmi7TEmQI6_Qdg"/>
+<img class="h-auto max-w-full rounded-lg object-cover" data-alt="Guests enjoying milkshakes from the Frosted Fizz counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMg0okSnzeE_bg41OChOqKckwg961i1JgQCvqcIsBJ_0hoJ1dJSxvQsf-izP3lUxT3KIkl1hupbu_Y4svliZ6mlG3pm4BN7TP2DMu8HEjq9rcvY_V1LpfwqGkKUCAJxrXcpxicLqD06Xr6U4aXRVs7oRtMBYwqmbBf2updRa6MH5wbq9orojRCZfNnRCgb67LoRwdPPOrx2aq-963IsmJ8VoKXIkOoCV0V5FobJx-so3cA5Zrld-aOY4jFVeuX6xFtztxrLZMgiA"/>
+<img class="h-auto max-w-full rounded-lg object-cover" data-alt="Close-up shot of a beautifully prepared falooda." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1PBiI51BEktRfJlXK1G0v4ZiDafEIO4P7cJgdpRUgKaXq_Z_PGScVusINH9r3tAnxBFMm46YTJfIHoMJNco2_MvSuLJX-3HtPGVWzLSemCrheL3fOvAsUJpE9yB2Mn80Ls8EfXFLKGIXOp5bINkdBn2FuydfIuW13MJZlt6fwWnDLSOld17LDtPOq5skkf27nIXDrcwzQKfIu0f81I18ZihSRv1xkehHTZmX4XRDuIdTmEiynd134JjEtzP-1tTSIz8jB87E01A"/>
+<img class="h-auto max-w-full rounded-lg object-cover" data-alt="The Frosted Fizz team happily serving customers at a festival." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIH30e2tdfBuOrVhCS6lPMLfMqsDgDpk6szOx8oTgQ_vdkidF4zMwuFElgewZYWKwwptIYU0snC4LxVclaD_ziIjPLcAqle1HxUjvvksc8sE8BOqIKJWBPCUQeaFLYmwkXwoEl__JoKdKcUDrfAIAdrw_B6_Rqkx7dlzKJaz-TjiSckXSzmCcTqdjnPEYwpdvPyyTVhcYzaOztkuFvv4s7nYES_NMgO-Hai938N7UAAIQiB6qi3NiXjHy_fGfZ3ZfxwGjYGdt-Yw"/>
+</div>
+</div>
+<!-- CTA Block -->
+<div class="px-4 py-16 lg:py-24">
+<div class="bg-primary/20 dark:bg-primary/10 text-center rounded-xl p-8 lg:p-16">
+<div class="flex flex-col gap-4 max-w-2xl mx-auto">
+<h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-tight font-display">Ready to Add Some Fizz to Your Party?</h2>
+<p class="text-text-muted-light dark:text-text-muted-dark">Let's make your next event unforgettable. Contact us today for a custom quote and let us bring the sweetness to your celebration.</p>
+<div class="pt-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-text-light text-base font-bold leading-normal tracking-[0.015em] mx-auto font-display">
+<span class="truncate">Request a Free Quote</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="bg-card-light dark:bg-card-dark border-t border-border-light dark:border-border-dark">
+<div class="mx-auto w-full max-w-[1280px] px-4 py-8 lg:px-40 lg:py-16">
+<div class="md:flex md:justify-between">
+<div class="mb-6 md:mb-0 max-w-sm">
+<a class="flex items-center gap-3" href="#">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319_footer)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"></path>
+</g>
+<defs>
+<clippath id="clip0_6_319_footer">
+<rect fill="white" height="48" width="48"></rect>
+</clippath>
+</defs>
+</svg>
+</div>
+<span class="self-center text-2xl font-bold whitespace-nowrap font-display text-text-light dark:text-text-dark">Frosted Fizz</span>
+</a>
+<p class="mt-4 text-sm text-text-muted-light dark:text-text-muted-dark">Bringing the sweetest moments to your celebrations across India.</p>
+</div>
+<div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+<div>
+<h3 class="mb-6 text-sm font-bold uppercase text-text-light dark:text-text-dark font-display">Quick Links</h3>
+<ul class="text-text-muted-light dark:text-text-muted-dark font-medium">
+<li class="mb-4"><a class="hover:underline" href="#">About</a></li>
+<li><a class="hover:underline" href="#">Menu</a></li>
+</ul>
+</div>
+<div>
+<h3 class="mb-6 text-sm font-bold uppercase text-text-light dark:text-text-dark font-display">Follow us</h3>
+<ul class="text-text-muted-light dark:text-text-muted-dark font-medium">
+<li class="mb-4"><a class="hover:underline" href="#">Instagram</a></li>
+<li><a class="hover:underline" href="#">Facebook</a></li>
+</ul>
+</div>
+<div>
+<h3 class="mb-6 text-sm font-bold uppercase text-text-light dark:text-text-dark font-display">Legal</h3>
+<ul class="text-text-muted-light dark:text-text-muted-dark font-medium">
+<li class="mb-4"><a class="hover:underline" href="#">Privacy Policy</a></li>
+<li><a class="hover:underline" href="#">Terms &amp; Conditions</a></li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="my-6 border-border-light dark:border-border-dark sm:mx-auto lg:my-8"/>
+<div class="sm:flex sm:items-center sm:justify-between">
+<span class="text-sm text-text-muted-light dark:text-text-muted-dark sm:text-center">© 2023 <a class="hover:underline" href="#">Frosted Fizz™</a>. All Rights Reserved.</span>
+<div class="flex mt-4 sm:justify-center sm:mt-0 gap-5 text-text-muted-light dark:text-text-muted-dark">
+<a href="#"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path>
+</svg></a>
+<a href="#"><svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.792 2.013 10.146 2 12.315 2zM12 7.177a4.823 4.823 0 100 9.646 4.823 4.823 0 000-9.646zM12 15a3 3 0 110-6 3 3 0 010 6z" fill-rule="evenodd"></path>
+<path d="M16.862 7.994a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"></path>
+</svg></a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

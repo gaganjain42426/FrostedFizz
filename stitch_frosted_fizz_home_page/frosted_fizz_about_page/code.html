@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Frosted Fizz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6ba6",
+                        "background-light": "#f8f5f7",
+                        "background-dark": "#230f17",
+                        "text-light": "#181014",
+                        "text-dark": "#f8f5f7",
+                        "text-muted-light": "#8d5e71",
+                        "text-muted-dark": "#a38d97",
+                        "border-light": "#f5f0f2",
+                        "border-dark": "#3c2a32"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Sticky TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-center border-b border-solid border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex w-full max-w-6xl items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"></path>
+</g>
+<defs>
+<clippath id="clip0_6_319"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-text-light dark:text-text-dark">Frosted Fizz</h2>
+</div>
+<div class="hidden items-center gap-9 lg:flex">
+<a class="text-sm font-medium leading-normal text-text-light dark:text-text-dark hover:text-primary" href="#">Home</a>
+<a class="text-sm font-medium leading-normal text-text-light dark:text-text-dark hover:text-primary" href="#">Services</a>
+<a class="text-sm font-medium leading-normal text-text-light dark:text-text-dark hover:text-primary" href="#">Gallery</a>
+<a class="text-sm font-medium leading-normal text-primary" href="#">About</a>
+<a class="text-sm font-medium leading-normal text-text-light dark:text-text-dark hover:text-primary" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em] sm:flex">
+<span class="truncate">Book Now</span>
+</button>
+<button class="flex min-w-[40px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 w-10 bg-primary/20 text-text-light dark:text-text-dark lg:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-1 flex-col items-center py-10 sm:py-16 lg:py-20">
+<div class="flex w-full max-w-4xl flex-col gap-10 sm:gap-16 lg:gap-20 px-4 sm:px-6 lg:px-0">
+<!-- HeroSection -->
+<section class="@container">
+<div class="flex min-h-[480px] flex-col items-center justify-center gap-6 rounded-xl bg-cover bg-center bg-no-repeat p-4 text-center @[480px]:gap-8" data-alt="A vibrant and colorful dessert counter at an outdoor event, with blurred happy people in the background." style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAbJiXmRfxoXFFMMdOiQJ_Uokal1qoc7NEHfc6uY1eGueQnr7QTjAB9wjRSNYkODPgvQrgPM-IUG7T5z2gEvw04x39FPERLrtJNClwMrkXrYmIKwoZnOwy1M-m_8kHTjY_wSIjQt7agKekW7-NaUL-BVvI4gEIuVD8yaqQDB6PGRsehguPPkWAHJrN6R1pDDAAu8tZz_X-BETmbf_0M3uPggRz75t7MpVcQilSWbAGJgWNlrIfROL8n7YDzcegIekX2gQjqrD2MZQ");'>
+<div class="flex flex-col gap-2">
+<h1 class="text-4xl font-black leading-tight tracking-[-0.033em] text-white @[480px]:text-5xl">Our Sweet Story</h1>
+<h2 class="max-w-2xl text-sm font-normal leading-normal text-white/90 @[480px]:text-base">Discover the journey of Frosted Fizz, from a small dream in Jaipur to Rajasthan's favorite live dessert experience. Our passion is crafting sweet memories, one event at a time.</h2>
+</div>
+</div>
+</section>
+<!-- Story/Timeline Section -->
+<section class="flex flex-col items-center gap-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark">Our Journey</h2>
+<p class="mt-2 text-text-muted-light dark:text-text-muted-dark">From a small outlet to a catering sensation.</p>
+</div>
+<div class="w-full max-w-md">
+<div class="grid grid-cols-[40px_1fr] gap-x-2">
+<div class="flex flex-col items-center gap-1 pt-3">
+<div class="flex h-6 w-6 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-base">storefront</span>
+</div>
+<div class="h-full w-[1.5px] bg-border-light dark:bg-border-dark grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3 pb-8">
+<p class="text-base font-medium leading-normal text-text-light dark:text-text-dark">Humble Beginnings</p>
+<p class="text-base font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">Our first small outlet opens in Jaipur, serving local treats and building a community of dessert lovers.</p>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="h-2 w-[1.5px] bg-border-light dark:bg-border-dark"></div>
+<div class="flex h-6 w-6 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-base">celebration</span>
+</div>
+<div class="h-full w-[1.5px] bg-border-light dark:bg-border-dark grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3 pb-8">
+<p class="text-base font-medium leading-normal text-text-light dark:text-text-dark">The Big Leap</p>
+<p class="text-base font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">We transitioned to live dessert counters, bringing the magic of fresh, custom-made treats directly to events.</p>
+</div>
+<div class="flex flex-col items-center gap-1 pb-3">
+<div class="h-2 w-[1.5px] bg-border-light dark:bg-border-dark"></div>
+<div class="flex h-6 w-6 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-base">workspace_premium</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-base font-medium leading-normal text-text-light dark:text-text-dark">A Rajasthan Favorite</p>
+<p class="text-base font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">Becoming the go-to choice for memorable and delicious dessert catering across the entire state.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder's Spotlight -->
+<section class="rounded-xl bg-primary/10 dark:bg-primary/20 p-4 sm:p-8">
+<div class="flex w-full flex-col gap-6 @container sm:gap-8 @[520px]:flex-row @[520px]:items-center @[520px]:justify-between">
+<div class="flex flex-col items-center gap-4 text-center @[520px]:flex-row @[520px]:text-left">
+<div class="h-32 w-32 flex-shrink-0 rounded-full bg-cover bg-center" data-alt="A portrait of Gagan Jain, founder of Frosted Fizz, smiling warmly." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMIGj7UKYpUJg9lZ-bv4Cj0XK_clkxkY5lmvBa93GQSWS7R0aqnObIQvjUX53fnSis2reeQCt5LGUV1vAiYQEX17UOo52h2n61-B0dJuR2wUFxyXjvJVf3KEsnKgaYOHzz37zvcM8DDtK2qjkKHd2jswUWhS4MptxRtx4J3PV80r0v-PFHIHryZW8tAqavvjWuVV7kYuw0o_jDcLXLvmqd5Lc9w59tTtwr6GKuS-YIOGZt91kQlLOKnacbaUtg-msb_DWO4-xSNg");'></div>
+<div class="flex flex-col">
+<p class="text-[22px] font-bold leading-tight tracking-[-0.015em] text-text-light dark:text-text-dark">Meet Our Founder, Gagan Jain</p>
+<p class="mt-1 text-base font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">"From the very first day, my dream was to spread joy through unique and delicious desserts. Seeing the smiles on our clients' faces is what fuels our passion at Frosted Fizz."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Promise Section -->
+<section class="flex flex-col items-center gap-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark">Our Promise</h2>
+<p class="mt-2 text-text-muted-light dark:text-text-muted-dark">What makes our experience unforgettable.</p>
+</div>
+<div class="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col items-center gap-3 rounded-lg border border-border-light dark:border-border-dark p-6 text-center">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">local_florist</span>
+</div>
+<h3 class="text-lg font-bold">Quality Ingredients</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">We believe the best desserts start with the finest, freshest ingredients, sourced with care.</p>
+</div>
+<div class="flex flex-col items-center gap-3 rounded-lg border border-border-light dark:border-border-dark p-6 text-center">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">tapas</span>
+</div>
+<h3 class="text-lg font-bold">The Live Experience</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Our live counters are more than just food; they're an interactive and engaging show for your guests.</p>
+</div>
+<div class="flex flex-col items-center gap-3 rounded-lg border border-border-light dark:border-border-dark p-6 text-center sm:col-span-2 lg:col-span-1">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">sentiment_very_satisfied</span>
+</div>
+<h3 class="text-lg font-bold">Customer Happiness</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Your joy is our top priority. We go the extra mile to ensure your event is a sweet success.</p>
+</div>
+</div>
+</section>
+<!-- Image Gallery -->
+<section class="flex flex-col items-center gap-8">
+<h4 class="text-sm font-bold uppercase leading-normal tracking-widest text-text-muted-light dark:text-text-muted-dark text-center">Our Setup in Action</h4>
+<div class="grid w-full grid-cols-2 grid-rows-2 gap-4">
+<div class="col-span-1 row-span-2 h-full min-h-60 rounded-lg bg-cover bg-center" data-alt="A detailed shot of a nitrogen ice cream machine in action, with clouds of smoke." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGfNrxCrhtyN8vTi20yoSH2MtHssLXCx3RdhaPR3GZmFce4MuLjWPI0ufPrhGXA44eOi5P9folooFjJn0gjhWG2nN8mNGG_rBp0PbBDWE9Kdn7t84ts8S2Qh035QZsACCTXAzKo84hHkwXPLcBuWqsvFWJmaZM7jv_nNuD_wVlI8ULZSVxgiG0QwphM2NQ0RIBMXOaZSGJ1eHXjRigRXOSWZLdqSDp6awXUSbtnoyQGowTPSVddkQAvzMgIZMgL5A29azS8LK5jw');"></div>
+<div class="col-span-1 row-span-1 min-h-40 rounded-lg bg-cover bg-center" data-alt="A colorful display of various toppings and sauces for desserts." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNjl5v1DsU7dh6Qzoet9dferovXFPm-9MDHR4eH42lcVAc7bGoMBPi6TzyxHD2EJF_y8yb2SIzTt1QMs-WTcukgPmdVIAA2qzEode0E9VzD-4CSPy7Aqybi7-IIQx9NAx6aXrnJKplLZzjlUPRQIVjgb88_eXqQ55goJb63copa-NyDDlsPek0IRNesyIbqpM1UGYNcp93jX2YzmAXnf5v1GdCQcMT5tdck4wB9XCjj09D0Ubhc2KYv1yLWu7lBqFceWCbis73ow');"></div>
+<div class="col-span-1 row-span-1 min-h-40 rounded-lg bg-cover bg-center" data-alt="Happy guests enjoying desserts at an outdoor wedding event." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBM2VRMp_FLOrhLDp3dpeCDPQSdqXiAUJBzBScjAQkyauQ43fAhL2dW9yecKo76Tb_Igs1oH98FXwoRjgK8pcv5ApB1CWAKr1ENlYQPb5lePpV2xY-j1xgE7_zPU3c32nuxHd2WSLyfSgZXphbGbC7AX8V7prraE0q_KFiJiCWtm3Crbcct_RbaTIhDw5ZXfaWXyIQde1p2jBFqy0KAi_ybcaBDXiUSv4GLMqy5TNN4D1d3uDKLT6zw5k3p5l8vSAPfm6ZlhhDf4w');"></div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="flex flex-col items-center gap-4 rounded-xl bg-primary/10 dark:bg-primary/20 p-8 text-center sm:p-12">
+<h2 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark">Ready to Make Your Event Sweeter?</h2>
+<p class="max-w-xl text-text-muted-light dark:text-text-muted-dark">Let's create unforgettable dessert moments together. Get in touch for a custom quote for your wedding, party, or corporate event.</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-primary text-text-light text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get a Quote</span>
+</button>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-auto flex justify-center border-t border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+<div class="w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+<div class="flex items-center gap-2">
+<div class="size-5 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_6_319_footer)"><path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"></path></g><defs><clippath id="clip0_6_319_footer"><rect fill="white" height="48" width="48"></rect></clippath></defs></svg>
+</div>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">© 2024 Frosted Fizz. All rights reserved.</p>
+</div>
+<div class="flex items-center gap-4">
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary" href="#"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary" href="#"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary" href="#"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 4s-.7 2.1-2 3.4c1.6 1.4 3.3 4.4 3.3 4.4 0 1.4-1.2 2.8-2.5 2.8H2.7M2.7 16c0-6.6 7.8-7.2 7.8-7.2s5.8-1.5 7.8 0c2 1.5 2.5 2.8 2.5 2.8H2.7z"></path></svg></a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating Action Button -->
+<button class="fixed bottom-6 right-6 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg">
+<svg fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+</button>
+</div>
+</body></html>

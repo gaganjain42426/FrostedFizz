@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Frosted Fizz - Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6ba6",
+                        "background-light": "#f8f5f7",
+                        "background-dark": "#230f17",
+                        "text-light": "#181014",
+                        "text-dark": "#f8f5f7",
+                        "text-muted-light": "#8d5e71",
+                        "text-muted-dark": "#a38b96",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Sticky TopNavBar -->
+<div class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="flex justify-center">
+<div class="w-full max-w-[1280px] px-4">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 dark:border-primary/30 py-3">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clippath id="clip0_6_319"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em]">Frosted Fizz</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="#">Services</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Gallery</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="#">Contact Us</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get a Quote</span>
+</button>
+</div>
+<button class="lg:hidden text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</header>
+</div>
+</div>
+</div>
+<main class="flex flex-1 justify-center py-5 sm:py-10">
+<div class="layout-content-container flex flex-col w-full max-w-[1280px] flex-1 px-4">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex w-full flex-col gap-3 text-center">
+<p class="text-4xl font-black leading-tight tracking-[-0.033em] sm:text-5xl">Our Sweet Moments</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal max-w-2xl mx-auto">A showcase of our dessert and beverage catering at real events. See how we add a touch of magic to every occasion.</p>
+</div>
+</div>
+<!-- ImageGrid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+<div class="grid gap-4">
+<div class="relative group"><img alt="Colorful drinks at a wedding event" class="h-auto max-w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBib-lkmXy5pf0-oedI_diAalf8k-RU-6RlD40q-NypBkYVDLFylRPUbEvy_LSpmbuBq-HeWQvEN6RCvyqyxIYLcP_OUppe0dC5KentouGP7Ytmm-q_Hl4LKDgft8EZLslMaHju0oG0XK0cbNd5Qc46U9oVYuZTVPTvlyYxeRxw0HPTp3-w3e-Z9GnVXc8fEbNF-IYC7OqztcLe1iASYgcPBECFzff86iBPC_N4hPlN7T_Rc6FE0uIsxXycFDIVGTpIl4Q2Wbb1IQ"/><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4"><p class="text-white text-base font-bold leading-tight">Wedding</p></div></div>
+<div class="relative group"><img alt="Elaborate milkshakes on a tray" class="h-auto max-w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrL-HIy8mP_Y7DJI6R1veICPLo5E8I6gaiPgeIo3yOxatLgpYOuYNqJjv9kgu_hHXNhUYG4HQ7GYuBuEDfYxy1ngmu2izqDSnghbaPZSuH4_JWeH-QZqb1FiayfN6P83FAH3Uoxzv_coOy6DChDiud-rwUTYpmEXNsy8Zn76RZyPYUsrNpAltxvs9bkn_svcYO4a0xAo1rEOiLMlGf6n8r-uI3qcw_uZLXvWrctap75nZ8PUgT0jvh5TxzD-onjId62R6CwjMEtA"/><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4"><p class="text-white text-base font-bold leading-tight">Birthday Party</p></div></div>
+<div class="relative group"><img alt="Bright yellow lemonades in glasses" class="h-auto max-w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWOJndg1J0BqZVXEZGOV3zuWzoITBS0ZVNLU3Ky6B-RVule82oOS9eDmWS-Zp10a7xyCbccZB0CaMiZLD5r8HO0UDpFGxzL0klCDuRE1Dxr4SpfccOqTNh910ZTDclSuxJgwPK3PfOZP-ZlqdAzUCdPn-weYEKGUUCg0IBhUn-N6z0REe9uU18fA8F5QyL1Fj6QJKhIO08bsGCynWzGcooPlloVPjPBrrukPOY0j1QsP9-LBdvYExfCHGbsj8fIwu8H5XyD3vDlQ"/><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4"><p class="text-white text-base font-bold leading-tight">Summer Festival</p></div></div>
+</div>
+<div class="grid gap-4">
+<div class="relative group"><img alt="Assortment of colorful macarons" class="h-auto max-w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMQdj2-BAkJGtd7aofgPG1GaJO0YAcRuQuKqTY2I7LyJH9dS1ORPd8joS8vHDEa3eSkQKdGIngy8bZGm205h9TpsG26nlPeJBSBq7Mw01dzjr55SwRDwbzkWN8MXAN5G1vq5G2RrgzTmUeGYwuZ7qt8cp1Sg4y2-GEZ8ia-E81btIE0FUv-zVOesVA3Ynf7EGt8Z16ambUYCxWZFUVM8N7ZRGvvaveo1w6_pKzUw13DERqoJp4fvaA58_W99kwOTJGaxdMOF0Ptg"/><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4"><p class="text-white text-base font-bold leading-tight">Corporate Event</p></div></div>
+<div class="relative group"><img alt="Pink dessert mousse in a glass" class="h-auto max-w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_yL8ShS1ZvzyEj0vPqaSm3tRpU50IUkW3skDg4AokDGoye9_1G6uqLiVP2YdRcapGe4g8GktkHGXY8-m3lBpcbISgymdMp4k_bFPIyjqwKFn9tq5c2TitykSv4we9NupsqJbiPePOue_4UhF0qC6TSP3K27XCc-rniZZQ7JsjtWGP3e8LowqY_QfLrVpwmyxEAbP7gkM-oJ0G8omAdQZPyv6bpAWsKs25IjLej21R4Ef8Q8SYiT2_GyTzv7HYsXIQG1NEmdIh7Q"/><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4"><p class="text-white text-base font-bold leading-tight">Baby Shower</p></div></div>
+<div class="relative group"><img alt="Elegant dessert table setup" class="h-auto max-w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAegXK5wftTp6n0mDGe6DjfM68B1dvkxJdcMFshIR6s5g1XCzipS72xK0caouAbkW0PHkwXWAr7haqq9c86fg40XEWj_ArBbnk5bOAj1hq3cegCmoKNmt-0jIFMYbc73hGD9SsdHTHMXAoX5yEgh50uacxQ7n4BnlBtuSbMOKhYap0stwIuWBEiBz0I6pDvquGRFnD-TJeb3Deq5riKU5YauTTLmAsRjsgNwD0zCYAUi3fKERsflMxI59k9k-KveQZRs92SgPMVQQ"/><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4"><p class="text-white text-base font-bold leading-tight">Wedding</p></div></div>
+</div>
+<div class="grid gap-4">
+<div class="relative group"><img alt="Close up of a decorated cake" class="h-auto max-w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD19HzZJXqW7tiQaZNz_WGUXop_6QjWpVFbjqkRaq_6bajtw-ep3Z1KS2Tv8snWuEY6V8lCc1Nio16n-5wKOtAkPFWFDahKblTf7RQxkMZNFz2yuBVPJmZWDaXMJ3TxtjKdJfTO7v86wTnbzP2grpB55oI0VCjgx1hs-Tyw0pNU6TwURrud-S2MJcZCxg7rKbQHuyOgbNrlxX64ww-b3_-xWQWb87BGMkCOTbkQONReXr6OTjzCKMu0hyygYSKvGvJXjBLomi4IPQ"/><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4"><p class="text-white text-base font-bold leading-tight">Anniversary</p></div></div>
+<div class="relative group"><img alt="Indian sweets arranged on a plate" class="h-auto max-w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU3dZFVjMfS72wFzWY2UEBNUPgu0rGTy8ge-DhPlAIc0kNWjyGyk543qKJTTlgoD77THa5Qhhr-I7AaaL2ru8ABTrge5v9fbc-bA6P79DtMwIYe2bao1DVkFsmzEMBKIv5oxsvaaBK5YeZxclTLwRbe0r4qch8XcF-VxuQUyngg2NHhed3zavyxP5whmmbZSvaW1M_B12GIMfPwz5r5Cr26Z5zzsBKKjTKh0FbXmllLPzXesQU2rV5eyGCu3yzKSW4bcZPmu_Stw"/><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4"><p class="text-white text-base font-bold leading-tight">Festival Celebration</p></div></div>
+<div class="relative group"><img alt="A variety of colorful ice creams" class="h-auto max-w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJs7l4YAH4Z3wBZNHaaX7vQMZjC9JsZItUJuWOkJZt8Oo1vbN9w-bFaJjDHio0SCLQ1iW8ql7wxQTZk84U2QQb8BPYaC6SPJQcBcvGQ0-nvnbsyCpdssRJ3yV5umzxSmZY2M9bCLatAOhRFZ1natDObCCagRnz2z6MhB8R3Muwu5ZaJ5QxLh1pIRF2aMlFEvmCKJwPmTSGZR5h3xNpxbQe0XOfU-6FnQeeT-umxn4B2duC-i-lfMUFp4K-_m80UgB9nS2MLXjQow"/><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4"><p class="text-white text-base font-bold leading-tight">Birthday Party</p></div></div>
+</div>
+<div class="grid gap-4">
+<div class="relative group"><img alt="People toasting with cocktails" class="h-auto max-w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8wRygcfzgrddoO_ErIAfz7lswnPZiEDaHCfEYOTpPgyb_9H0p0KK5VYAxf_0Yzqo0Fnpteb5fDZ84CU3RrXEQtIpjB2H75TFO4s0usRvpy2oFO4LDIHTNYhLq7Hor0Ugt1kbPXiWzray1h3J6PrF90N8bdGASzJ_oXs2tDqH1A_bOogxBHSW41Vq-leBaOzhoB5p2KVF8kvPythfXdjojVU7YXXAL0MXe_PM3ekLnBd_Ur9KlR-gj1Ib74w-AkJXuT3eAKxo5CQ"/><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4"><p class="text-white text-base font-bold leading-tight">Corporate Mixer</p></div></div>
+<div class="relative group"><img alt="A pink bubbly drink with a flower" class="h-auto max-w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjozcbmb1pk-xwFh4Uk1RZ0d3U51CSB-jEth8eMC1_CT4ruOEpRqEIIatvhrDsPeShIxbThjrcvq3WABH01fxW9skp7ng2sHuhFtT0Xx3u2VjO9lJapLix_JbgAenB2ZhD2jVuTqQwzFr2DyRj21wOKp4I0o_-S-SJNAqmoHkivJEagwvOgI8nFpd7L7N_A4NBGgwlWAk_3IURO1U7qwg62G2qGGw9jmVSBoSbtRfq1nf6MLEiCyHn6jSFGijnvS6ODu1aIhimAA"/><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4"><p class="text-white text-base font-bold leading-tight">Wedding Reception</p></div></div>
+<div class="relative group"><img alt="A tray of assorted cupcakes" class="h-auto max-w-full rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_i_Z0km4bxk1RjOtQchQcrOoHD65fqquKVd5QekvEgj-SRabzpNshrOyvPeUExl7JUHsw8Ypkqr0rD3LfnLR5pH8jC-HmB0Lj6yCroyVvokZg9IpkjilZ0bK1Dm64gOX-jZ5D_7m0CfjHiEJzJIE_i_au44xx40yXDAsdQLCTNzM1bWOUvZRUxXB88c70L6YVDe8HpyRdfEmIiapslesmFge3lngO70HIAk3JF_rZc4kWHLqVYVyNg9ua3k2Ue57iCUNcSNVL3w"/><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4"><p class="text-white text-base font-bold leading-tight">Corporate Event</p></div></div>
+</div>
+</div>
+<!-- SectionHeader -->
+<div class="text-center">
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-16 sm:text-3xl">What Our Clients Say</h2>
+</div>
+<!-- Carousel -->
+<div class="relative w-full overflow-hidden">
+<div class="flex overflow-x-auto snap-x snap-mandatory [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex items-stretch p-4 gap-4 w-full">
+<div class="flex snap-center h-full flex-1 flex-col gap-4 rounded-xl bg-primary/10 dark:bg-primary/20 p-6 min-w-full sm:min-w-[45%] lg:min-w-[30%]">
+<p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-relaxed">"Frosted Fizz was the highlight of our corporate event! The drinks were innovative and absolutely delicious. The team was professional and the setup looked fantastic. Highly recommended!"</p>
+<div class="flex items-center gap-4 mt-auto pt-4 border-t border-primary/20">
+<img alt="Portrait of Priya S." class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaneBOho3YH1mDybRyPZm0VPj1m3lvvAtLw6tbAWa9TGVPJcB7WWCOHgM2N9mUdPbsT-swgDCupjXTuxfpKLGOJBUZMkGMQ_Fwj6xTgu4qEy1T4tEAyK8Drxv-Sq4DNMaSgS6guPKi9as57sJb3WGasZpKuAI7XMv9Emror9iERsRIiD6Y0znK5EtG4zCQLTj4YcvVh95M-3SYdTCUU-4an1tA0eZGYwRWgziDJnNlT1pe4M9dZ0c0_8nuS8YBujYMogBGZLHNfA"/>
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-normal">Priya S.</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Corporate Event</p>
+</div>
+</div>
+</div>
+<div class="flex snap-center h-full flex-1 flex-col gap-4 rounded-xl bg-primary/10 dark:bg-primary/20 p-6 min-w-full sm:min-w-[45%] lg:min-w-[30%]">
+<p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-relaxed">"The dessert bar at my daughter's birthday was a massive hit with both kids and adults. Everything was so beautiful and tasted even better. So glad we chose them!"</p>
+<div class="flex items-center gap-4 mt-auto pt-4 border-t border-primary/20">
+<img alt="Portrait of Rohan Mehta" class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2BeGH4-W8EDBggPqshdCrU26XepJrmnRz7fe2RCmhudsT14UgNSEsJU1OEUV6l3s_gAEVuclfQ3npzLZkumTxm9xAmIfG8wOKPmHvjzrXT7EGKaz10GCJ6qjoTi4kdmjrO7xZW7u2ElraC8nLm3wTlg-tK0Q3mG6K1cXSCdMTki59VNKT-KXKMTSJhZJOKhBcGUuskfrvBxGbGsy53TON6nVWbqg-r7dzRcgLdui_dPMRhHE4hIP-y4HZ0lhk2LgGaaGUIBQrfg"/>
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-normal">Rohan Mehta</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Birthday Party</p>
+</div>
+</div>
+</div>
+<div class="flex snap-center h-full flex-1 flex-col gap-4 rounded-xl bg-primary/10 dark:bg-primary/20 p-6 min-w-full sm:min-w-[45%] lg:min-w-[30%]">
+<p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-relaxed">"Absolutely stunning and tasty additions to our wedding. Our guests couldn't stop talking about the unique flavors and the gorgeous setup. It was perfect!"</p>
+<div class="flex items-center gap-4 mt-auto pt-4 border-t border-primary/20">
+<img alt="Portrait of Anjali &amp; Vikram" class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC2nZJ-M1tv1-bdd3Jz6e_gVHRJxW5hEKTxednE9OZb3i1GpPLp4u2josr2jUpexcd8DB1dDwIIOeJxGbr6q7wOjg-2tSjPAAc0k7_SVAQXP6yu-a97h9X-WaUolAT3LyN8s3jO1hhBrrCqlmc-VG2hOQ7iQVkUVoiPvenOtbUTwurPzEcSbmPVlVOtHHiwFLpnOGsBpKte_nkii0yI0tGdFhpKV7vNJ8dOupNbcjisatrVhdBbcdSh-Gw8o6bQObrEPx1Qi5EdA"/>
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-normal">Anjali &amp; Vikram</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Wedding</p>
+</div>
+</div>
+</div>
+<div class="flex snap-center h-full flex-1 flex-col gap-4 rounded-xl bg-primary/10 dark:bg-primary/20 p-6 min-w-full sm:min-w-[45%] lg:min-w-[30%]">
+<p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-relaxed">"We hired Frosted Fizz for our annual festival, and they were a crowd favourite. The mocktails were refreshing and the desserts were a delight. Will definitely have them back next year."</p>
+<div class="flex items-center gap-4 mt-auto pt-4 border-t border-primary/20">
+<img alt="Portrait of Sameer Khan" class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBReAxGGkR6s6tqMTXzQKzBzV5aW5W2L_9r3gEiDQQdWrKjceynxbWLs5y4k-kqjL7ZQb6FuAAgVfebCRBarYRjPJB_HnMBdU_fRIH_zfkq582i7j6kPXalrimUP_SC8dHp2tD0WCN-IYhWu0EvgC8FHJEngbC5jeWCGOrsOppejElxttmvpZUGNN_3ucBg8Ug3SLQERq1qOEtALSI9tzdaESXoePgDZACiumJGnwGVvjAGOyYxMdO7oAEBhhUckOxOuIx9gFgwRQ"/>
+<div>
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-normal">Sameer Khan</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Music Festival</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary/10 dark:bg-primary/20 mt-10">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="py-12 flex flex-col md:flex-row items-center justify-between gap-8 border-t border-primary/20">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_6_319-footer)"><path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path></g><defs><clippath id="clip0_6_319-footer"><rect fill="white" height="48" width="48"></rect></clippath></defs></svg>
+</div>
+<span class="text-lg font-bold">Frosted Fizz</span>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Services</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Contact</a>
+</div>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">© 2024 Frosted Fizz. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+<!-- Floating Action Button -->
+<a class="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#128C7E] transition-colors" href="https://wa.me/910000000000" rel="noopener noreferrer" target="_blank">
+<svg class="bi bi-whatsapp" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+</svg>
+</a>
+</div>
+</body></html>

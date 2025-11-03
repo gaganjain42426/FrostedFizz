@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark;
+  }
+}
+
+@layer utilities {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-size: 24px;
+  }
+  
+  .hero-bg {
+    background-size: 200% 200%;
+    animation: bg-pan 10s ease-in-out infinite alternate;
+  }
+  
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .perspective {
+    perspective: 1000px;
+  }
+  
+  .parallax {
+    transform: translateZ(-100px) scale(2);
+  }
+  
+  .icon-shadow {
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+}
