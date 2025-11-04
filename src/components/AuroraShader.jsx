@@ -68,22 +68,29 @@ void main(){
   vec3 rampColor;
   COLOR_RAMP(colors, uv.x, rampColor);
 
-  // Apply noise to create the wave shape
-  float noise = snoise(vec2(uv.x * 3.0, uTime * 0.2 + m.x * 0.5));
-  float waveHeight = uv.y - (noise * 0.15 * uAmplitude);
+  // Create multiple layers of noise for more complex waves
+  float noise1 = snoise(vec2(uv.x * 2.0, uTime * 0.15 + m.x * 0.3));
+  float noise2 = snoise(vec2(uv.x * 4.0, uTime * 0.25 + m.y * 0.2));
+  float combinedNoise = (noise1 + noise2 * 0.5) / 1.5;
+  
+  float waveHeight = uv.y - (combinedNoise * 0.2 * uAmplitude);
 
-  // Fade the wave out at the bottom
-  float fade = smoothstep(0.0, 0.4, uv.y);
+  // Create smoother fade across the entire height
+  float fade = smoothstep(0.0, 0.6, uv.y) * (1.0 - smoothstep(0.7, 1.0, uv.y));
   waveHeight = mix(uv.y, waveHeight, fade);
 
-  // Define the core of the aurora
-  float core = 0.5;
-  float intensity = smoothstep(core - uBlend, core + uBlend, waveHeight);
+  // Define the core of the aurora with wider spread
+  float core = 0.45;
+  float intensity = smoothstep(core - uBlend * 1.2, core + uBlend * 1.2, waveHeight);
   
-  vec3 auroraColor = intensity * rampColor;
-  float auroraAlpha = intensity;
+  // Add glow effect
+  float glow = pow(intensity, 0.7);
   
-  fragColor = vec4(auroraColor * auroraAlpha, auroraAlpha);
+  // Vibrant colors with glow
+  vec3 auroraColor = glow * rampColor * 2.0;
+  float auroraAlpha = glow * 0.9;
+  
+  fragColor = vec4(auroraColor, auroraAlpha);
 }
 `;
 

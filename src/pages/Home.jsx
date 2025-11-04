@@ -5,16 +5,16 @@ export default function Home() {
   return (
     <main className="flex-grow preserve-3d">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/10 dark:from-navy dark:via-background-dark dark:to-navy/80 py-24 md:py-40 isolate">
+      <div className="relative overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white dark:from-navy dark:via-background-dark dark:to-navy py-24 md:py-40 isolate">
         {/* Aurora Shader Background */}
-        <AuroraShader 
-          colorStops={["#FF6AA6", "#66D6FF", "#FF9ECC"]}
-          amplitude={1.2}
-          blend={0.6}
-          speed={0.8}
-        />
-        
-        <div className="absolute inset-0 z-0 hero-bg parallax bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/10 dark:from-navy dark:via-background-dark dark:to-navy/80"></div>
+        <div className="absolute inset-0 z-0">
+          <AuroraShader 
+            colorStops={["#FF6AA6", "#66D6FF", "#FF9ECC"]}
+            amplitude={2.0}
+            blend={0.7}
+            speed={0.5}
+          />
+        </div>
         
         {/* Floating Icons */}
         <div className="absolute inset-0 z-10 opacity-80 dark:opacity-60">
