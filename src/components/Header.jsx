@@ -10,11 +10,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/20 dark:border-white/20 px-6 py-4">
           <Link to="/" className="flex items-center gap-3 text-navy dark:text-white">
-            <div className="text-primary">
-              <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>
-                icecream
-              </span>
-            </div>
+            <img src="/logo.png" alt="Frosted Fizz Logo" className="h-12 w-12 object-contain" />
             <h2 className="text-xl font-bold">Frosted Fizz</h2>
           </Link>
           
