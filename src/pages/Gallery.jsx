@@ -1,4 +1,12 @@
 export default function Gallery() {
+  const customShapes = [
+    'clip-path: ellipse(80% 60% at 50% 50%)',
+    'clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%)',
+    'clip-path: circle(50% at 50% 50%)',
+    'clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%)',
+    'clip-path: ellipse(60% 80% at 50% 50%)',
+  ];
+
   const galleryImages = [
     {
       src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBib-lkmXy5pf0-oedI_diAalf8k-RU-6RlD40q-NypBkYVDLFylRPUbEvy_LSpmbuBq-HeWQvEN6RCvyqyxIYLcP_OUppe0dC5KentouGP7Ytmm-q_Hl4LKDgft8EZLslMaHju0oG0XK0cbNd5Qc46U9oVYuZTVPTvlyYxeRxw0HPTp3-w3e-Z9GnVXc8fEbNF-IYC7OqztcLe1iASYgcPBECFzff86iBPC_N4hPlN7T_Rc6FE0uIsxXycFDIVGTpIl4Q2Wbb1IQ',
@@ -89,85 +97,138 @@ export default function Gallery() {
     },
   ]
 
-  const splitIntoColumns = (arr, cols) => {
-    const result = Array.from({ length: cols }, () => [])
-    arr.forEach((item, i) => result[i % cols].push(item))
-    return result
-  }
-
-  const columns = splitIntoColumns(galleryImages, 4)
-
   return (
-    <main className="flex flex-1 justify-center py-16 md:py-24 bg-background-light dark:bg-background-dark">
-      <div className="flex flex-col w-full max-w-[1440px] flex-1 px-6">
-        {/* Page Heading */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
-          <div className="flex w-full flex-col gap-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-navy dark:text-white hero-title-shadow">
-              Our Sweet Moments
-            </h1>
-            <p className="text-navy/70 dark:text-gray-300 text-base md:text-lg font-normal leading-normal max-w-2xl mx-auto">
-              A showcase of our dessert and beverage catering at real events. See how we add a touch of magic to every occasion.
-            </p>
+    <main className="flex-grow">
+      {/* Header Section */}
+      <section className="relative bg-background-light dark:bg-navy/10 py-16 md:py-24 overflow-hidden">
+        <div className="absolute -top-40 -left-40 w-96 h-96 bg-secondary/20 rounded-full opacity-50 blur-3xl"></div>
+        <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-primary/20 rounded-full opacity-50 blur-3xl"></div>
+        <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
+          <h1 className="text-5xl md:text-7xl font-black text-navy dark:text-white tracking-tighter leading-tight">
+            Sweet Moments
+          </h1>
+          <p className="font-body text-navy/80 dark:text-gray-300 text-lg md:text-xl max-w-2xl mt-4 mx-auto">
+            A glimpse into the fun and flavor we bring to every event. See our desserts and happy customers in action!
+          </p>
+        </div>
+
+        {/* Unique Shapes Gallery Grid */}
+        <div className="max-w-7xl mx-auto px-6 mt-16 relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
+            {/* Large Ellipse Shape - Left */}
+            <div className="col-span-1 md:col-span-2 lg:row-span-2">
+              <div className="relative w-full h-full min-h-[200px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-secondary/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-secondary/40 transition-shadow duration-300">
+                <img 
+                  alt="Milkshakes at an event" 
+                  className="absolute inset-0 w-full h-full object-cover scale-125 hover:scale-150 transition-transform duration-500" 
+                  style={{ clipPath: 'ellipse(80% 60% at 50% 50%)' }}
+                  src={galleryImages[0].src}
+                />
+              </div>
+            </div>
+
+            {/* Polygon Shape */}
+            <div className="col-span-1 md:col-span-2 lg:col-span-1">
+              <div className="relative w-full aspect-[4/3] bg-primary/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-primary/40 transition-shadow duration-300">
+                <img 
+                  alt="Soft serve ice cream" 
+                  className="absolute inset-0 w-full h-full object-cover scale-125 hover:scale-150 transition-transform duration-500" 
+                  style={{ clipPath: 'polygon(0 25%, 100% 0, 100% 75%, 0 100%)' }}
+                  src={galleryImages[1].src}
+                />
+              </div>
+            </div>
+
+            {/* Large Circle - Center with Play Button */}
+            <div className="col-span-2 md:col-span-2 lg:col-span-2 lg:row-span-2">
+              <div className="relative w-full h-full min-h-[200px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-accent/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-accent/40 transition-shadow duration-300 flex items-center justify-center">
+                <img 
+                  alt="Catering setup" 
+                  className="absolute inset-0 w-full h-full object-cover scale-125 hover:scale-150 transition-transform duration-500" 
+                  style={{ clipPath: 'circle(50% at 50% 50%)' }}
+                  src={galleryImages[2].src}
+                />
+                <div className="absolute inset-0 bg-navy/30 flex items-center justify-center">
+                  <button className="w-16 h-16 bg-white/80 rounded-full flex items-center justify-center text-navy backdrop-blur-sm hover:scale-110 transition-transform">
+                    <span className="material-symbols-outlined text-4xl">play_arrow</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Trapezoid Shape */}
+            <div className="col-span-1 md:col-span-1 lg:col-span-1">
+              <div className="relative w-full aspect-[4/3] bg-secondary/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-secondary/40 transition-shadow duration-300">
+                <img 
+                  alt="Falooda dessert" 
+                  className="absolute inset-0 w-full h-full object-cover scale-125 hover:scale-150 transition-transform duration-500" 
+                  style={{ clipPath: 'polygon(25% 0, 100% 0, 75% 100%, 0 100%)' }}
+                  src={galleryImages[3].src}
+                />
+              </div>
+            </div>
+
+            {/* Ellipse Shape */}
+            <div className="col-span-1 md:col-span-1 lg:col-span-1">
+              <div className="relative w-full aspect-square bg-primary/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-primary/40 transition-shadow duration-300">
+                <img 
+                  alt="Waffle dessert" 
+                  className="absolute inset-0 w-full h-full object-cover scale-125 hover:scale-150 transition-transform duration-500" 
+                  style={{ clipPath: 'ellipse(60% 80% at 50% 50%)' }}
+                  src={galleryImages[4].src}
+                />
+              </div>
+            </div>
+
+            {/* Polygon Wide */}
+            <div className="col-span-2 md:col-span-2 lg:col-span-2">
+              <div className="relative w-full aspect-[16/9] bg-accent/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-accent/40 transition-shadow duration-300">
+                <img 
+                  alt="Group enjoying desserts" 
+                  className="absolute inset-0 w-full h-full object-cover scale-125 hover:scale-150 transition-transform duration-500" 
+                  style={{ clipPath: 'polygon(0 25%, 100% 0, 100% 75%, 0 100%)' }}
+                  src={galleryImages[5].src}
+                />
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        {/* Image Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16 md:mb-24">
-          {columns.map((column, colIndex) => (
-            <div key={colIndex} className="grid gap-4 md:gap-6">
-              {column.map((image, imgIndex) => (
-                <div key={imgIndex} className="relative group rounded-3xl overflow-hidden shadow-lg hover:shadow-primary/30 hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-primary">
-                  <img alt={image.alt} className="h-auto max-w-full" src={image.src} />
-                  <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 md:p-6">
-                    <p className="text-white text-base md:text-lg font-bold leading-tight">{image.caption}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-navy dark:text-white text-3xl md:text-4xl font-extrabold text-shadow-blue dark:text-shadow-pink">
-            What Our Clients Say
+      {/* Testimonials Section */}
+      <section className="relative bg-background-light dark:bg-background-dark py-16 md:py-24 overflow-hidden">
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-navy dark:text-white mb-12">
+            Happy Clients, Sweet Words
           </h2>
-        </div>
-
-        {/* Testimonials Carousel */}
-        <div className="relative w-full overflow-hidden">
-          <div className="flex overflow-x-auto snap-x snap-mandatory [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            <div className="flex items-stretch gap-6 w-full px-4">
-              {testimonials.map((testimonial, index) => (
-                <div
-                  key={index}
-                  className="flex snap-center h-full flex-1 flex-col gap-4 rounded-3xl bg-white dark:bg-navy/40 shadow-lg p-8 min-w-full sm:min-w-[45%] lg:min-w-[30%] border border-gray-200/50 dark:border-white/10"
-                >
-                  <p className="text-navy/70 dark:text-gray-300 text-base font-normal leading-relaxed">
-                    {testimonial.text}
-                  </p>
-                  <div className="flex items-center gap-4 mt-auto pt-4 border-t border-primary/20">
-                    <img
-                      alt={`Portrait of ${testimonial.name}`}
-                      className="h-12 w-12 rounded-full object-cover border-2 border-primary/30"
-                      src={testimonial.avatar}
-                    />
-                    <div>
-                      <p className="text-navy dark:text-white text-base font-bold leading-normal">
-                        {testimonial.name}
-                      </p>
-                      <p className="text-navy/70 dark:text-gray-400 text-sm font-normal leading-normal">
-                        {testimonial.role}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+          <div className="relative">
+            <div className="flex flex-col items-center p-8 md:p-12 rounded-3xl bg-white/50 dark:bg-navy/30 backdrop-blur-sm border border-primary/20 dark:border-white/10">
+              <span className="material-symbols-outlined text-primary text-5xl mb-4">format_quote</span>
+              <p className="font-body text-xl md:text-2xl font-semibold text-navy/80 dark:text-gray-200 leading-relaxed">
+                "Frosted Fizz was the absolute highlight of our wedding! The desserts were incredible and the team was so professional. Our guests are still raving about the milkshakes!"
+              </p>
+              <p className="mt-6 font-display font-bold text-lg text-navy dark:text-white" style={{ textShadow: '2px 2px 0px #66D6FF, -2px -2px 0px #FF9ECC' }}>
+                - Priya & Rohan S.
+              </p>
+            </div>
+            <div className="absolute top-1/2 -left-4 md:-left-8 transform -translate-y-1/2">
+              <button className="w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-navy rounded-full flex items-center justify-center text-navy dark:text-white shadow-lg hover:bg-secondary hover:text-white transition-colors">
+                <span className="material-symbols-outlined">arrow_back_ios_new</span>
+              </button>
+            </div>
+            <div className="absolute top-1/2 -right-4 md:-right-8 transform -translate-y-1/2">
+              <button className="w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-navy rounded-full flex items-center justify-center text-navy dark:text-white shadow-lg hover:bg-secondary hover:text-white transition-colors">
+                <span className="material-symbols-outlined">arrow_forward_ios</span>
+              </button>
             </div>
           </div>
+          <div className="flex justify-center gap-2 mt-8">
+            <span className="w-3 h-3 bg-primary rounded-full"></span>
+            <span className="w-3 h-3 bg-gray-300 dark:bg-navy/50 rounded-full"></span>
+            <span className="w-3 h-3 bg-gray-300 dark:bg-navy/50 rounded-full"></span>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
   )
 }

@@ -1,70 +1,107 @@
 export default function Menu() {
-  const menuItems = [
-    {
-      name: 'Soft Serve Ice Cream',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBJgHqlWQkg4PrQz-p9HmJ8vQkXgaexNTNfEdgl3KbkCmOlS2eHWHq0BydB0A2dYTVUkbT49NCrPxjxZFhMhvWFzT_P-Fq0DKdB-ME7L87ai_3aJEuMmWaU9kEO6_jR0nehEHs7mP5HECykVfFZCpzypA_gYnvalXOD7YH7tvAy1WcnigQQPTncGLEspyLxagGjQqcvPOJLoJYr6JHaZJ7N0bk_xg0-CpgLMBmjuGFZ8gRBPVgDkSiLPD94SsocYu8utG0WG5nQsA'
-    },
-    {
-      name: 'Milkshakes & Thick Shakes',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAihxz3gUosKEM9xPD0jo8_zWsMqU2MQCw_hQasMD7tkDA_uZfb-Zm__53-ZyXrcsQB0rAQrvDYW_Sn2f5xOZrLyjHQQ9JnE3aAGhUsufJw-FwxIxaj08LN8HgqXvuce5Qv-AsCrFP7LAVS4jy9p8M7y7j7-78cLz20Z97yoqn0dJvyTCuWk_nKP5VV_6ZmAb13S5IqH1SVI_beEwDf00fU8NHrdTTLUXe69P6q_xazbqJzow7ogyZG2wyxM1hSbalxTQu0m0DgWw'
-    },
-    {
-      name: 'Flavored Sodas',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC0JTo48FIIZRh0xisqLEFgqc6CplDQXf9_LqFpBB-4wCt0sU6hsMIrrGCCCsyD3Ef1LAkgg3CZB04i42QrALy0d_MK3szceL8cbapYyCG1S7uKhyc1E8nCConHz96bKjbpfo2KwnRjIkfmmNvBodJ6cj8XizeYTr-hk0svTMenhBq146bxfjUM0O4KFowNhnBn-zXYYsbKBB7ECx2ua0lcOM14LwZplyFXmNfWsDI92bF7AgU4YTuk89mRgAB-35gcVeRWrXULFQ'
-    },
-    {
-      name: 'Cold Coffee',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDLY_tSKk0OiOtU-SGCqXg5ta3wmQDUJAXImvzjASmp9O-QPkBNayoWdqVVCmIcX7r7EWRmGUw7cAuK0UTB50W_vII8bDIgkJuzsNJ1eFQ2dgm-gF46wqQKCdwCY_b7PnNwGs_LPdt3kQ-FHNVxVMCJA6fyB1Vg6IGS-JON-bvKURk187Sc0MbR8gjuJv6a3nyIOWEDyDjP1KLk-RbcNPXDDX1hE1TZkujlDHjoJj4SUOWwfkQsd30zFwty9dJAzaTy47FR5rrZEg'
-    },
-    {
-      name: 'Ice Gola',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDwF7lsLYIPPZ3ThWBKa5dkhuBW_HxBFq6MhzoFAMN6WDlVuXnRZllov0t6jVX2JVogSUClqpziuvLfcNnAtHQMML48hg7FvBv467NBVVwdqG31ENABIlzBHKNuUskdPnZx9RRVDNVrn-0h5wfHLmYux2IG__GQQOYpdwRZl5XUAdR9_K9zb58GGPyEyB-7sTWFxDc6FB9wvZbjTKVIB-oZtlREXKAGh-AHOgT7U3yQcwfBTLa5oHU_JNIb2Bv6VyYAEaMMOgohgw'
-    },
-    {
-      name: 'Sugarcane Juice',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDNKh24zG64-P1uKbqzRg8q_CpibYHkp7Me-NCbtfbWVO1VcrlLSeMGuoI9_z4wuJ9V_O-lnlGXnavHYiKenVd_ysaSnP-Sye-R49ykHEaW1REmxEsHOuckBMkY30cjlSYn-oqhEE3PrQO-qQ1KXqs7a0y3d-3GiJpYGBwGuKlRxT4_IqpJicv__QG6J85AlUmZ1WQKKvUNec_IgVLiW7eTU270MXDiKOWqPFlWOocujtHevqShGIonkgOJLdNBcSRf9dnb4e4fRA'
-    },
-    {
-      name: 'Waffles',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBCezsgY-yiuEo457EEgF022yeu8MF1prHF71yN1BYAfl_eRDfodI3AdUPqYqPZ3wVN8pG5su3EEyNzLVdWeZ8sXJGKnGbc9pjU_mUtJ3mlfJDEtLWLjZ9McD8fWMlfIOgJrR6QrV7y5819EnM0hhCN9pRP8799KlPmarm-osJrRqiQkt4x9Nopfxz_eIu-AP3oL3pBXRV0QZywRZsmPA_h0CA9oOrWdaxV3nWSRwr9n9Wn6vH9pUp-okxWVCsjyFItb1iDsBi1tA'
-    },
-    {
-      name: 'Brownies with Ice Cream',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDVxZNBz234_XBdul2MWtcX8CmiUzh0tRj9xLrBUcJ9w7KmgRbrk6F6RiQH7bx6g2j70X5F0W4xCJWgsj3Rl7WlehsLMPHCHTO-WffHhK2n-_LrATHACL0gwcUQlS6aUv4lwh1gnm06OkUHBJKErH5bnI5PFFlhHdMqIcm77Pri0JXtiyOxxE8VlfNjQHuX3Fk4Cx99cr6gqxmLviY3wyIW2CRAOhURQdwGLNcWo-HPr3DV38emJOT9lveXxooDyKOQiu-agb9hCQ'
-    },
-  ]
-
   return (
-    <main className="flex-1 px-6 md:px-10 lg:px-20 py-16 md:py-24 bg-background-light dark:bg-background-dark">
-      <div className="mx-auto max-w-7xl">
-        {/* Page Heading */}
-        <div className="text-center mb-6">
-          <h1 className="text-navy dark:text-white text-4xl md:text-5xl font-extrabold hero-title-shadow">
-            Explore Our Menu
+    <main className="flex-grow">
+      {/* Header Section */}
+      <section className="py-16 md:py-24 text-center bg-background-light dark:bg-background-dark">
+        <div className="max-w-7xl mx-auto px-6">
+          <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-shadow-blue dark:text-shadow-pink text-navy dark:text-white">
+            Our Delicious Offerings
           </h1>
+          <p className="mt-4 font-body text-lg md:text-xl text-navy/80 dark:text-gray-300 max-w-2xl mx-auto">
+            A delightful selection of treats guaranteed to make your event unforgettable.
+          </p>
         </div>
-        
-        {/* Body Text */}
-        <p className="text-navy/70 dark:text-gray-300 text-base md:text-lg font-normal leading-normal text-center mb-12 md:mb-16">
-          Available at events and on-demand catering setups.
-        </p>
+      </section>
 
-        {/* Image Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-          {menuItems.map((item, index) => (
-            <div
-              key={index}
-              className="group relative bg-cover bg-center flex flex-col justify-end rounded-3xl aspect-square overflow-hidden shadow-lg hover:shadow-primary/30 hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-primary"
-              style={{
-                backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 60%), url("${item.image}")`
-              }}
-            >
-              <div className="p-4 md:p-6">
-                <p className="text-white text-base md:text-lg font-bold leading-tight">{item.name}</p>
+      <div className="space-y-24 md:space-y-32 py-12 overflow-hidden">
+        {/* Soft Serve Ice Cream Section */}
+        <section className="relative">
+          <div className="absolute inset-0 bg-primary/10 dark:bg-primary/20 -skew-y-3"></div>
+          <div className="max-w-7xl mx-auto px-6 relative z-10 py-16">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="text-center lg:text-left">
+                <h2 className="text-4xl md:text-6xl font-black tracking-tight text-shadow-blue dark:text-shadow-pink text-navy dark:text-white">
+                  Soft Serve Ice Cream
+                </h2>
+                <p className="font-body text-navy/80 dark:text-gray-300 text-lg md:text-xl max-w-lg mt-6 mx-auto lg:mx-0">
+                  Creamy, dreamy, and swirled to perfection. A classic favorite for all ages, available in a variety of delightful flavors.
+                </p>
+                <a className="inline-flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 mt-8 bg-primary text-navy text-base font-bold tracking-wider hover:bg-accent transition-all duration-300 ease-in-out shadow-lg shadow-primary/40 hover:scale-105" href="#soft-serve">
+                  <span className="truncate">See Flavors</span>
+                </a>
+              </div>
+              <div className="relative h-96 flex items-center justify-center">
+                <div className="absolute inset-0 bg-primary/20 dark:bg-primary/30" style={{ clipPath: 'ellipse(80% 65% at 50% 50%)' }}></div>
+                <img 
+                  alt="Soft Serve Ice Cream" 
+                  className="relative z-10 w-80 h-auto object-contain drop-shadow-2xl transition-transform duration-500 hover:scale-110" 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMFMkNLNIeQ7hJVRcVrqFf8O2oeRcLHZrDwwxyMrR3SUOsnKQ2yZSO6vH67i3iK46vORDrrY3vzs0hWmMcyIp_miaMbm4rLWxGPpA8JiCnvaIDVCR5inuZ-BRT4ll0Pv4_PkYKLEALLNtMIhbCXxA6wgjsXN0D93Yi2OvDGPsEW-re9Yp3ukmSu4XgIIEHSgNyTaWbfDuI9d9qyGV5SEfj94m3kM7QAvojCqMD2d0LAERfmeOqScHb6EpPf7XOwPRzeVXD358F5Q"
+                />
+                <span className="material-symbols-outlined absolute text-3xl text-accent top-10 left-10 rotate-12">star</span>
+                <span className="material-symbols-outlined absolute text-2xl text-secondary bottom-16 right-5 -rotate-12">auto_awesome</span>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        </section>
+
+        {/* Milkshakes Section */}
+        <section className="relative">
+          <div className="max-w-7xl mx-auto px-6 py-16">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="relative h-96 flex items-center justify-center order-last lg:order-first">
+                <div className="absolute inset-0 bg-secondary/20 dark:bg-secondary/30" style={{ clipPath: 'ellipse(75% 70% at 50% 50%)' }}></div>
+                <img 
+                  alt="Milkshakes" 
+                  className="relative z-10 w-80 h-auto object-contain drop-shadow-2xl transition-transform duration-500 hover:scale-110" 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIPWXXeFzRPWPBmwuGM_03TVYO8iEn3OlrZfjjVf44MdqwYBz9MY4FfvwvKmF60RIxT3UHOHYS8c4DMaU7QoUMxToGpNd-UEfHAg7iHUtwcxUaZEbB8pY1Zu_5RlCIzsybi90l9PFWsOv1Idxo1k0LxLWS1AwVGJjcAYBIuYRuYXlHT9-Fe_3LjRkOranJUseWuUQqtMurhc33IUal5TYR5oNOGuUfD-0QcjInTxcHm9G4Z7jkLuLYkdKVsPaI-D2izVC-i2e8Fg"
+                />
+                <span className="material-symbols-outlined absolute text-4xl text-primary top-12 right-12 rotate-12">favorite</span>
+              </div>
+              <div className="text-center lg:text-right">
+                <h2 className="text-4xl md:text-6xl font-black tracking-tight text-shadow-pink dark:text-shadow-blue text-navy dark:text-white">
+                  Milkshakes
+                </h2>
+                <p className="font-body text-navy/80 dark:text-gray-300 text-lg md:text-xl max-w-lg mt-6 mx-auto lg:ml-auto lg:mr-0">
+                  Thick, luscious, and blended with premium ingredients. Sip on pure happiness with our wide range of custom shakes.
+                </p>
+                <a className="inline-flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 mt-8 bg-secondary text-navy text-base font-bold tracking-wider hover:bg-blue-300 transition-all duration-300 ease-in-out shadow-lg shadow-secondary/40 hover:scale-105" href="#milkshakes">
+                  <span className="truncate">Explore Shakes</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Waffles Section */}
+        <section className="relative">
+          <div className="absolute inset-0 bg-accent/10 dark:bg-accent/20 skew-y-3"></div>
+          <div className="max-w-7xl mx-auto px-6 relative z-10 py-16">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="text-center lg:text-left">
+                <h2 className="text-4xl md:text-6xl font-black tracking-tight text-shadow-blue dark:text-shadow-pink text-navy dark:text-white">
+                  Waffles
+                </h2>
+                <p className="font-body text-navy/80 dark:text-gray-300 text-lg md:text-xl max-w-lg mt-6 mx-auto lg:mx-0">
+                  Crispy on the outside, fluffy on the inside. Our waffles are a perfect canvas for your favorite sweet toppings.
+                </p>
+                <a className="inline-flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 mt-8 bg-accent text-navy text-base font-bold tracking-wider hover:bg-pink-200 transition-all duration-300 ease-in-out shadow-lg shadow-accent/40 hover:scale-105" href="#waffles">
+                  <span className="truncate">View Toppings</span>
+                </a>
+              </div>
+              <div className="relative h-96 flex items-center justify-center">
+                <div className="absolute inset-0 bg-accent/20 dark:bg-accent/30" style={{ clipPath: 'ellipse(80% 65% at 50% 50%)' }}></div>
+                <img 
+                  alt="Waffles" 
+                  className="relative z-10 w-80 h-auto object-contain drop-shadow-2xl transition-transform duration-500 hover:scale-110" 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFWgQkNZAqs1pNAifBQyhC22glD7Wsu49ihoiXtu10tHcmagE4p7XegtXMFlCe5h5Qw9jns30Zri6Zh_mRpXiYLswvHp5OHeyqj-dcuN57gN4jX1_-c_HhL75DMU6cTZwa7Q4iJ2DV-9tePv8-Ue3bfQEht80jbHTI-vQaJ2qSnI4bZ7Jhtx--Wj201iSVMxMEsvjyajUMKNz45IlIFGY727iGI4Mo6_TTd9nm3-GB_cUf-umu71x8uQFZdxYzvaSBU19nlekjnA"
+                />
+                <span className="material-symbols-outlined absolute text-3xl text-secondary bottom-10 left-10 -rotate-12">ac_unit</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="h-16"></div>
       </div>
     </main>
   )
