@@ -14,11 +14,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/50 dark:border-white/10 px-6 py-4">
           <Link to="/" className="flex items-center gap-3 text-navy dark:text-white" onClick={closeMobileMenu}>
-            <div className="text-primary">
-              <span className="material-symbols-outlined" style={{ fontSize: '28px' }}>
-                icecream
-              </span>
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="Frosted Fizz Logo" 
+              className="h-10 w-auto object-contain"
+            />
             <h2 className="text-xl font-bold">Frosted Fizz</h2>
           </Link>
           

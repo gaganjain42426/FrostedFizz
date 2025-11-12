@@ -7,7 +7,11 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-8">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-primary text-4xl">icecream</span>
+            <img 
+              src="/logo.png" 
+              alt="Frosted Fizz Logo" 
+              className="h-12 w-auto object-contain"
+            />
             <span className="text-2xl font-extrabold text-navy dark:text-white">Frosted Fizz</span>
           </div>
           
