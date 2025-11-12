@@ -21,8 +21,30 @@ function BookNow() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you! We will get back to you soon.');
+    
+    // Format the message for WhatsApp
+    let message = `*New Event Booking Inquiry*\n\n`;
+    message += `👤 *Name:* ${formData.name}\n`;
+    message += `📱 *Contact:* ${formData.contact}\n`;
+    message += `🎉 *Event Type:* ${formData.eventType}\n`;
+    message += `👥 *Expected Guests:* ${formData.guests}\n`;
+    message += `📅 *Event Date:* ${formData.date}\n`;
+    message += `📍 *City:* ${formData.city}\n`;
+    if (formData.budget) {
+      message += `💰 *Budget:* ₹${formData.budget}\n`;
+    }
+    if (formData.notes) {
+      message += `📝 *Notes:* ${formData.notes}\n`;
+    }
+    
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // WhatsApp URL with your number
+    const whatsappURL = `https://wa.me/918003225164?text=${encodedMessage}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappURL, '_blank');
   };
 
   return (
@@ -151,12 +173,12 @@ function BookNow() {
               </div>
 
               <div>
-                <label className="form-label" htmlFor="budget">Budget Range</label>
+                <label className="form-label" htmlFor="budget">Budget Range (Optional)</label>
                 <input
                   className="form-input"
                   id="budget"
                   name="budget"
-                  placeholder="e.g. ₹50,000 - ₹75,000"
+                  placeholder="₹1,000 - ₹5,00,000"
                   type="text"
                   value={formData.budget}
                   onChange={handleChange}

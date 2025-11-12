@@ -1,7 +1,7 @@
 export default function FloatingActionButton() {
   return (
     <a
-      href="https://wa.me/910000000000"
+      href="https://wa.me/918003225164"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg hover:scale-110 transition-transform"
