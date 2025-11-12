@@ -77,7 +77,7 @@ export default function Header() {
           
           <div className="hidden md:flex justify-end">
             <Link 
-              to="/inquiry"
+              to="/book-now"
               className="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-7 bg-primary text-white text-base font-semibold leading-normal hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/40"
             >
               <span className="truncate">Get a Quote</span>
@@ -155,7 +155,7 @@ export default function Header() {
                 Contact
               </Link>
               <Link 
-                to="/inquiry"
+                to="/book-now"
                 onClick={closeMobileMenu}
                 className="bg-primary text-white text-base font-semibold py-3 px-6 rounded-full hover:bg-primary/90 transition-colors text-center mt-2"
               >
