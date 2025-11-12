@@ -10,9 +10,9 @@ export default function Header() {
   const closeMobileMenu = () => setMobileMenuOpen(false)
   
   return (
-    <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/50 dark:border-white/10 px-6 py-4">
+        <div className="flex items-center justify-between whitespace-nowrap px-8 py-4">
           <Link to="/" className="flex items-center gap-3 text-navy dark:text-white" onClick={closeMobileMenu}>
             <img 
               src="/logo.png" 
@@ -22,67 +22,65 @@ export default function Header() {
             <h2 className="text-xl font-bold">Frosted Fizz</h2>
           </Link>
           
-          <div className="hidden md:flex flex-1 justify-center gap-8">
-            <div className="flex items-center gap-8">
-              <Link 
-                to="/" 
-                className={`text-sm font-medium leading-normal transition-colors ${
-                  isActive('/') 
-                    ? 'text-primary dark:text-accent font-bold' 
-                    : 'text-navy dark:text-gray-300 hover:text-primary dark:hover:text-primary'
-                }`}
-              >
-                Home
-              </Link>
-              <Link 
-                to="/menu" 
-                className={`text-sm font-medium leading-normal transition-colors ${
-                  isActive('/menu') 
-                    ? 'text-primary dark:text-accent font-bold' 
-                    : 'text-navy dark:text-gray-300 hover:text-primary dark:hover:text-primary'
-                }`}
-              >
-                Our Menu
-              </Link>
-              <Link 
-                to="/gallery" 
-                className={`text-sm font-medium leading-normal transition-colors ${
-                  isActive('/gallery') 
-                    ? 'text-primary dark:text-accent font-bold' 
-                    : 'text-navy dark:text-gray-300 hover:text-primary dark:hover:text-primary'
-                }`}
-              >
-                Gallery
-              </Link>
-              <Link 
-                to="/about" 
-                className={`text-sm font-medium leading-normal transition-colors ${
-                  isActive('/about') 
-                    ? 'text-primary dark:text-accent font-bold' 
-                    : 'text-navy dark:text-gray-300 hover:text-primary dark:hover:text-primary'
-                }`}
-              >
-                About Us
-              </Link>
-              <Link 
-                to="/services" 
-                className={`text-sm font-medium leading-normal transition-colors ${
-                  isActive('/services') 
-                    ? 'text-primary dark:text-accent font-bold' 
-                    : 'text-navy dark:text-gray-300 hover:text-primary dark:hover:text-primary'
-                }`}
-              >
-                Event Services
-              </Link>
-            </div>
+          <div className="hidden md:flex items-center gap-10">
+            <Link 
+              to="/" 
+              className={`text-base font-medium leading-normal transition-colors ${
+                isActive('/') 
+                  ? 'text-primary dark:text-accent font-semibold' 
+                  : 'text-navy dark:text-gray-300 hover:text-primary dark:hover:text-primary'
+              }`}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/menu" 
+              className={`text-base font-medium leading-normal transition-colors ${
+                isActive('/menu') 
+                  ? 'text-primary dark:text-accent font-semibold' 
+                  : 'text-navy dark:text-gray-300 hover:text-primary dark:hover:text-primary'
+              }`}
+            >
+              Menu
+            </Link>
+            <Link 
+              to="/services" 
+              className={`text-base font-medium leading-normal transition-colors ${
+                isActive('/services') 
+                  ? 'text-primary dark:text-accent font-semibold' 
+                  : 'text-navy dark:text-gray-300 hover:text-primary dark:hover:text-primary'
+              }`}
+            >
+              Events
+            </Link>
+            <Link 
+              to="/about" 
+              className={`text-base font-medium leading-normal transition-colors ${
+                isActive('/about') 
+                  ? 'text-primary dark:text-accent font-semibold' 
+                  : 'text-navy dark:text-gray-300 hover:text-primary dark:hover:text-primary'
+              }`}
+            >
+              About Us
+            </Link>
+            <Link 
+              to="/inquiry" 
+              className={`text-base font-medium leading-normal transition-colors ${
+                isActive('/inquiry') 
+                  ? 'text-primary dark:text-accent font-semibold' 
+                  : 'text-navy dark:text-gray-300 hover:text-primary dark:hover:text-primary'
+              }`}
+            >
+              Contact
+            </Link>
           </div>
           
           <div className="hidden md:flex justify-end">
             <Link 
               to="/inquiry"
-              className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-navy dark:bg-primary text-white dark:text-navy text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary dark:hover:bg-accent transition-colors"
+              className="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-7 bg-primary text-white text-base font-semibold leading-normal hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/40"
             >
-              <span className="truncate">Contact</span>
+              <span className="truncate">Get a Quote</span>
             </Link>
           </div>
           
@@ -99,8 +97,8 @@ export default function Header() {
         
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-lg border-b border-gray-200/50 dark:border-white/10">
-            <nav className="flex flex-col px-4 py-4 gap-3">
+          <div className="md:hidden bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-lg">
+            <nav className="flex flex-col px-6 py-4 gap-3">
               <Link 
                 to="/" 
                 onClick={closeMobileMenu}
@@ -121,18 +119,18 @@ export default function Header() {
                     : 'text-navy dark:text-gray-300 hover:bg-primary/10'
                 }`}
               >
-                Our Menu
+                Menu
               </Link>
               <Link 
-                to="/gallery" 
+                to="/services" 
                 onClick={closeMobileMenu}
                 className={`text-base font-medium py-3 px-4 rounded-lg transition-colors ${
-                  isActive('/gallery') 
+                  isActive('/services') 
                     ? 'bg-primary/20 text-primary font-bold' 
                     : 'text-navy dark:text-gray-300 hover:bg-primary/10'
                 }`}
               >
-                Gallery
+                Events
               </Link>
               <Link 
                 to="/about" 
@@ -146,22 +144,22 @@ export default function Header() {
                 About Us
               </Link>
               <Link 
-                to="/services" 
+                to="/inquiry" 
                 onClick={closeMobileMenu}
                 className={`text-base font-medium py-3 px-4 rounded-lg transition-colors ${
-                  isActive('/services') 
+                  isActive('/inquiry') 
                     ? 'bg-primary/20 text-primary font-bold' 
                     : 'text-navy dark:text-gray-300 hover:bg-primary/10'
                 }`}
               >
-                Event Services
+                Contact
               </Link>
               <Link 
                 to="/inquiry"
                 onClick={closeMobileMenu}
-                className="bg-navy dark:bg-primary text-white dark:text-navy text-base font-bold py-3 px-4 rounded-full hover:bg-primary dark:hover:bg-accent transition-colors text-center mt-2"
+                className="bg-primary text-white text-base font-semibold py-3 px-6 rounded-full hover:bg-primary/90 transition-colors text-center mt-2"
               >
-                Contact
+                Get a Quote
               </Link>
             </nav>
           </div>
