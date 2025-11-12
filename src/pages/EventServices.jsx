@@ -1,179 +1,158 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
 
 export default function EventServices() {
-  const [activeTab, setActiveTab] = useState('weddings')
-
-  const eventImages = {
-    weddings: [
-      {
-        name: 'Haldi Ceremony',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAEUWko_Si0muiVE85KPGb44tSVXUVEXDjQSb2TeKVz_l1xfKLfUnmsx5LeuXAeNlq0OqbauJhwUD60SayHby_zjC-ELtbaToHastvF0Li-qQkQ2vN78A_I9oulE4gf8V9f5P9B69BFfjCbMXlc6ALUsaCSLoAIdwdiiYLalcDr2gX1OKIio4Ijv0hShAWXlIKGMy3A0o1FCzBoTgkHjiPX-ug1JXfrfuJPSBpwNOsuw9y4ZHMLOqMRJZwIld-iE9Kj8BA8lSRlFw'
-      },
-      {
-        name: 'Mehndi Night',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAYW-7XZUPxGhHGXKcnZPzWpjoZe8Jknf41cUdfcJCwGqKqw3WAYQQP5bf02brXgbV17XwWz_-Vsgp7AIXogfjT9QcXwdoTNj9xWqk6eEGWf1otrxAR7y6w2FDgKPUuPUHusJ229jsiCv_KFWA7T1gk54IacIj4sgcXGQpENAZoRUrbVG0rJKVS2fy3PaBVb2Dmy-vLQCnIQkJ54UgUwLQEgtwQ4L93czcTM1mV653oKCWe-YKtIbam0G5a-davKxt0PbEoop4puA'
-      },
-      {
-        name: 'Sangeet',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCW1NS2CJ-LudksZBvcP9hyGU-8gL-HvstD5YctonLJm8lGxnunB4kaCE7HbI2suBeVECdqDdps2MkxY7Cs5Nh2xYlW2a1mHKadz6zLh0Z_dhf7h0Qxj_J3zDIiKHU9KeGR09-91icu6r30lRlKhHYekdf2FBgLthwYZzSGOmzoa3oz00tJzI2AJYC4sgPr2thl4plt3QXnkAo887v3xVZSbaq5xmm8XA4GVyIQ6F3ynmcQL7zsd2nmYuBGGWE6qxzIaQ7hD0f7ZA'
-      },
-      {
-        name: 'Reception',
-        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCZs9j9zp6DuBcIE5e-lhu8OgZMHcb2Qk70jb5klQoJu3H_MdR-D9UvjqagjQgzzVC5p5-XyxdOcBcTWERdjFSt30Ay4tSSGaCM86NsCffv0hIKK7dcuEM--wRjzHpbQSwlaG102VDOb_Ue8G0RUL5e9hPmMOxju5Cc_JExtAbOF0o3pskmWPKSs2J3bKYilKqsaE1JBnkTKw-jvMN8eUzMFr359iPUNurWowVeFY9tFozXli7hFrXU6WWMcKc1UzHG9Lqm88YjhQ'
-      },
-    ]
-  }
-
   return (
-    <main className="flex flex-col items-center w-full">
-      <div className="w-full max-w-[1280px] px-4 py-5 lg:px-40 lg:py-10">
-        {/* Hero Section */}
-        <div className="@container">
-          <div className="@[480px]:p-0">
-            <div
-              className="flex min-h-[480px] lg:min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4 text-center"
-              style={{
-                backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkEEsZ5QytlYLx8XM5r_NkcXTxIEaw54BOVCOgEMnhWxTecdkCSHtMz3Y4nAz8nx3dgY5SghHmNlESmaq22pE_g8WBUjBRcytVv7lfGp55QvuPVYUq9QXM7zUl6hbhkcPO76f-7pIx_UeZde78tqT7zvwWaReo7Fkaqm2a5I1vaE-Yc49kVrFVHhvLJG7Y7yDR37WoZmIJED5nzHZ0U3inXA0MNVKXsDgzNjhTLZTBMKL13QGk6GnSKA_8mrM3FtHpvZli6wwryg")'
-              }}
-            >
-              <div className="flex flex-col gap-2">
-                <h1 className="text-white text-4xl font-bold leading-tight tracking-[-0.033em] @[480px]:text-5xl font-display">
-                  Fresh Desserts, Unforgettable Events.
-                </h1>
-                <h2 className="text-white text-base font-normal leading-normal @[480px]:text-lg">
-                  We bring the counter, staff, and vibes — fresh desserts live at your event.
-                </h2>
-              </div>
-              <Link
-                to="/inquiry"
-                className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base font-display hover:bg-accent transition-colors"
-              >
-                <span className="truncate">Plan Your Event</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* How It Works Section */}
-        <div className="flex flex-col gap-10 px-4 py-16 lg:py-24 @container">
-          <div className="flex flex-col gap-4 text-center">
-            <h2 className="text-text-light dark:text-text-dark tracking-tight text-3xl font-bold leading-tight @[480px]:text-4xl font-display">
-              How It Works
-            </h2>
-            <p className="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal max-w-[720px] mx-auto">
-              Getting our live dessert experience at your event is as easy as one, two, three!
+    <main className="flex-grow">
+      {/* Header Section */}
+      <section className="relative bg-background-light dark:bg-navy/10 pt-16 md:pt-24 pb-12 md:pb-16 overflow-hidden">
+        <div className="absolute -top-40 -left-40 w-96 h-96 bg-secondary/20 rounded-full opacity-50 blur-3xl"></div>
+        <div className="absolute top-20 right-[-10rem] w-80 h-80 bg-primary/20 rounded-full opacity-50 blur-3xl"></div>
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="text-center">
+            <h1 className="text-5xl md:text-7xl font-black text-navy dark:text-white tracking-tighter leading-tight">
+              Sweeten Your Events
+            </h1>
+            <p className="font-body text-navy/80 dark:text-gray-300 text-lg md:text-xl max-w-3xl mt-4 mx-auto">
+              We bring the counter, staff, and vibes — fresh desserts live at your event.
             </p>
           </div>
-
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4 lg:gap-6 p-0">
-            <div className="flex flex-1 gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 flex-col text-center items-center">
-              <div className="text-primary bg-primary/20 rounded-full p-3 mb-2">
-                <span className="material-symbols-outlined text-3xl">event</span>
-              </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="text-text-light dark:text-text-dark text-lg font-bold leading-tight font-display">
-                  Choose Your Event
-                </h3>
-                <p className="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">
-                  Select the type of celebration you're hosting.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-1 gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 flex-col text-center items-center">
-              <div className="text-primary bg-primary/20 rounded-full p-3 mb-2">
-                <span className="material-symbols-outlined text-3xl">restaurant_menu</span>
-              </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="text-text-light dark:text-text-dark text-lg font-bold leading-tight font-display">
-                  Customize Your Menu
-                </h3>
-                <p className="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">
-                  Pick your favorite desserts and beverages from our extensive menu.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-1 gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 flex-col text-center items-center">
-              <div className="text-primary bg-primary/20 rounded-full p-3 mb-2">
-                <span className="material-symbols-outlined text-3xl">celebration</span>
-              </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="text-text-light dark:text-text-dark text-lg font-bold leading-tight font-display">
-                  We Bring the Party
-                </h3>
-                <p className="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">
-                  Our team arrives with everything needed to delight your guests.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
+      </section>
 
-        {/* Event Offerings Section */}
-        <div className="px-4 py-10">
-          <h2 className="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] font-display text-center pb-8">
-            Catering for Every Celebration
-          </h2>
-
-          <div className="pb-3">
-            <div className="flex flex-wrap justify-center border-b border-border-light dark:border-border-dark px-4 gap-4 md:gap-8">
-              <button
-                className={`flex flex-col items-center justify-center border-b-[3px] pb-3 pt-2 ${
-                  activeTab === 'weddings' ? 'border-b-primary text-primary' : 'border-b-transparent text-text-muted-light dark:text-text-muted-dark'
-                }`}
-                onClick={() => setActiveTab('weddings')}
-              >
-                <p className="text-sm font-bold leading-normal tracking-[0.015em] font-display">Weddings</p>
-              </button>
-              <button
-                className={`flex flex-col items-center justify-center border-b-[3px] pb-3 pt-2 ${
-                  activeTab === 'birthdays' ? 'border-b-primary text-primary' : 'border-b-transparent text-text-muted-light dark:text-text-muted-dark'
-                }`}
-                onClick={() => setActiveTab('birthdays')}
-              >
-                <p className="text-sm font-bold leading-normal tracking-[0.015em] font-display">Birthdays</p>
-              </button>
-              <button
-                className={`flex flex-col items-center justify-center border-b-[3px] pb-3 pt-2 ${
-                  activeTab === 'corporate' ? 'border-b-primary text-primary' : 'border-b-transparent text-text-muted-light dark:text-text-muted-dark'
-                }`}
-                onClick={() => setActiveTab('corporate')}
-              >
-                <p className="text-sm font-bold leading-normal tracking-[0.015em] font-display">Corporate Gatherings</p>
-              </button>
-              <button
-                className={`flex flex-col items-center justify-center border-b-[3px] pb-3 pt-2 ${
-                  activeTab === 'festivals' ? 'border-b-primary text-primary' : 'border-b-transparent text-text-muted-light dark:text-text-muted-dark'
-                }`}
-                onClick={() => setActiveTab('festivals')}
-              >
-                <p className="text-sm font-bold leading-normal tracking-[0.015em] font-display">College & School Festivals</p>
-              </button>
-            </div>
-          </div>
-
-          {/* Event Content */}
-          {activeTab === 'weddings' && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-10">
-              {eventImages.weddings.map((event, index) => (
-                <div key={index} className="flex flex-col gap-3 group">
-                  <div className="overflow-hidden rounded-xl">
-                    <img
-                      className="h-60 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      src={event.image}
-                      alt={event.name}
-                    />
-                  </div>
-                  <h3 className="text-text-light dark:text-text-dark text-lg font-bold leading-tight font-display">
-                    {event.name}
-                  </h3>
+      <div className="space-y-16 md:space-y-24 pb-24 md:pb-32">
+        {/* Weddings Section */}
+        <section className="relative overflow-hidden pt-12 md:pt-16">
+          <div className="absolute top-0 left-0 w-full h-full -skew-y-3 bg-accent/20 dark:bg-accent/10 transform"></div>
+          <div className="absolute top-1/4 -left-10 w-20 h-20 bg-secondary/50 rounded-full blur-lg"></div>
+          <div className="absolute bottom-1/4 -right-12 w-24 h-24 bg-primary/50 rounded-2xl blur-lg rotate-45"></div>
+          <div className="max-w-7xl mx-auto px-6 relative z-10">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+              <div className="relative order-2 md:order-1">
+                <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-primary mb-6" style={{ textShadow: '-3px -3px 0 #FFF, 3px -3px 0 #FFF, -3px 3px 0 #FFF, 3px 3px 0 #FFF, 4px 4px 0 #66D6FF, 5px 5px 0 #66D6FF, 6px 6px 0 #66D6FF' }}>
+                  Weddings
+                </h2>
+                <p className="font-body text-lg text-navy/80 dark:text-gray-300 mb-6">
+                  Add a touch of sweetness to your special day. Our elegant dessert stations are a perfect match for wedding celebrations, delighting guests of all ages.
+                </p>
+                <Link to="/inquiry" className="inline-flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary text-white text-base font-bold leading-normal tracking-wider hover:bg-primary/80 transition-colors shadow-lg">
+                  <span className="truncate">Book for a Wedding</span>
+                </Link>
+              </div>
+              <div className="relative order-1 md:order-2">
+                <img 
+                  alt="Wedding dessert catering setup" 
+                  className="rounded-3xl shadow-2xl w-full h-auto object-cover transform -rotate-3 hover:rotate-0 hover:scale-105 transition-transform duration-300" 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVGFWSCR7zaS2_l9XBM49k5t_KAL4RV8h44npEFAvOzvW6Q7dd72pXrPh8jKy0yJYoAVc6kEwT3aHATMvebLaNsrjLNl_vdNFGqPNyfYOxGmN2ymVf7BbqdhfPdPdxIHgkShWqARLFZgbQUIlKd98d4MKqiyXWRCfiZTYRSL-wPsdX_RMYD9B6RHNfOWO1K5tGRsvcnY9-V0XuhXkYBy68f6tqwllZnEqn3OripqDJnfCwRCGdqHXJuaN_q6ef8NHw70RfFjlWAg"
+                />
+                <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 w-48 h-48 md:w-64 md:h-64 z-20">
+                  <img 
+                    alt="Waffle dessert for weddings" 
+                    className="w-full h-full object-cover rounded-full border-8 border-white dark:border-navy shadow-lg" 
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFWgQkNZAqs1pNAifBQyhC22glD7Wsu49ihoiXtu10tHcmagE4p7XegtXMFlCe5h5Qw9jns30Zri6Zh_mRpXiYLswvHp5OHeyqj-dcuN57gN4jX1_-c_HhL75DMU6cTZwa7Q4iJ2DV-9tePv8-Ue3bfQEht80jbHTI-vQaJ2qSnI4bZ7Jhtx--Wj201iSVMxMEsvjyajUMKNz45IlIFGY727iGI4Mo6_TTd9nm3-GB_cUf-umu71x8uQFZdxYzvaSBU19nlekjnA"
+                  />
                 </div>
-              ))}
+              </div>
             </div>
-          )}
-        </div>
+          </div>
+        </section>
+
+        {/* Birthdays Section */}
+        <section className="relative overflow-hidden pt-12 md:pt-16">
+          <div className="absolute top-0 right-0 w-full h-full skew-y-3 bg-secondary/20 dark:bg-secondary/10 transform"></div>
+          <div className="absolute top-1/2 -right-8 w-24 h-24 bg-primary/40 rounded-full blur-xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 -left-10 w-32 h-32 bg-accent/40 rounded-3xl blur-lg -rotate-12"></div>
+          <div className="max-w-7xl mx-auto px-6 relative z-10">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+              <div className="relative">
+                <img 
+                  alt="Birthday party dessert catering" 
+                  className="rounded-3xl shadow-2xl w-full h-auto object-cover transform rotate-3 hover:rotate-0 hover:scale-105 transition-transform duration-300" 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMFMkNLNIeQ7hJVRcVrqFf8O2oeRcLHZrDwwxyMrR3SUOsnKQ2yZSO6vH67i3iK46vORDrrY3vzs0hWmMcyIp_miaMbm4rLWxGPpA8JiCnvaIDVCR5inuZ-BRT4ll0Pv4_PkYKLEALLNtMIhbCXxA6wgjsXN0D93Yi2OvDGPsEW-re9Yp3ukmSu4XgIIEHSgNyTaWbfDuI9d9qyGV5SEfj94m3kM7QAvojCqMD2d0LAERfmeOqScHb6EpPf7XOwPRzeVXD358F5Q"
+                />
+                <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-primary rounded-full flex items-center justify-center text-white text-4xl transform rotate-12">
+                  <span className="material-symbols-outlined text-5xl">cake</span>
+                </div>
+                <div className="absolute -top-4 -right-4 w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center text-white text-4xl transform -rotate-12">
+                  <span className="material-symbols-outlined text-3xl">celebration</span>
+                </div>
+              </div>
+              <div className="relative text-right md:text-left">
+                <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-secondary mb-6" style={{ textShadow: '-3px -3px 0 #FFF, 3px -3px 0 #FFF, -3px 3px 0 #FFF, 3px 3px 0 #FFF, 4px 4px 0 #FF9ECC, 5px 5px 0 #FF9ECC, 6px 6px 0 #FF9ECC' }}>
+                  Birthdays
+                </h2>
+                <p className="font-body text-lg text-navy/80 dark:text-gray-300 mb-6">
+                  Make birthday wishes sweeter! Our fun and colorful dessert bars are a guaranteed hit, bringing smiles and delicious treats to the party.
+                </p>
+                <Link to="/inquiry" className="inline-flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-secondary text-navy text-base font-bold leading-normal tracking-wider hover:bg-secondary/80 transition-colors shadow-lg">
+                  <span className="truncate">Plan a Party</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Corporate Section */}
+        <section className="relative overflow-hidden pt-12 md:pt-16">
+          <div className="absolute top-0 left-0 w-full h-full -skew-y-3 bg-accent/20 dark:bg-accent/10 transform"></div>
+          <div className="max-w-7xl mx-auto px-6 relative z-10">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+              <div className="relative order-2 md:order-1">
+                <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-primary mb-6" style={{ textShadow: '-3px -3px 0 #FFF, 3px -3px 0 #FFF, -3px 3px 0 #FFF, 3px 3px 0 #FFF, 4px 4px 0 #66D6FF, 5px 5px 0 #66D6FF, 6px 6px 0 #66D6FF' }}>
+                  Corporate
+                </h2>
+                <p className="font-body text-lg text-navy/80 dark:text-gray-300 mb-6">
+                  Impress your clients and reward your team. Our professional and playful catering adds a unique flavor to corporate functions, conferences, and celebrations.
+                </p>
+                <Link to="/inquiry" className="inline-flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary text-white text-base font-bold leading-normal tracking-wider hover:bg-primary/80 transition-colors shadow-lg">
+                  <span className="truncate">Enquire for Corporate</span>
+                </Link>
+              </div>
+              <div className="relative order-1 md:order-2">
+                <div className="bg-navy/80 dark:bg-navy/50 p-4 rounded-3xl transform rotate-2">
+                  <img 
+                    alt="Corporate event dessert bar" 
+                    className="rounded-2xl shadow-2xl w-full h-auto object-cover transform -rotate-3 hover:rotate-0 hover:scale-105 transition-transform duration-300" 
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVGFWSCR7zaS2_l9XBM49k5t_KAL4RV8h44npEFAvOzvW6Q7dd72pXrPh8jKy0yJYoAVc6kEwT3aHATMvebLaNsrjLNl_vdNFGqPNyfYOxGmN2ymVf7BbqdhfPdPdxIHgkShWqARLFZgbQUIlKd98d4MKqiyXWRCfiZTYRSL-wPsdX_RMYD9B6RHNfOWO1K5tGRsvcnY9-V0XuhXkYBy68f6tqwllZnEqn3OripqDJnfCwRCGdqHXJuaN_q6ef8NHw70RfFjlWAg"
+                  />
+                </div>
+                <div className="absolute top-[-2rem] left-[-2rem] w-16 h-16 bg-secondary/80 rounded-full"></div>
+                <div className="absolute bottom-[-2rem] right-[-2rem] w-24 h-24 border-8 border-dashed border-accent rounded-2xl rotate-12"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Any Occasion Section */}
+        <section className="relative overflow-hidden pt-12 md:pt-16">
+          <div className="absolute top-0 right-0 w-full h-full skew-y-3 bg-secondary/20 dark:bg-secondary/10 transform"></div>
+          <div className="max-w-7xl mx-auto px-6 relative z-10">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+              <div className="relative">
+                <img 
+                  alt="Catering for special occasions" 
+                  className="rounded-3xl shadow-2xl w-full h-auto object-cover transform rotate-3 hover:rotate-0 hover:scale-105 transition-transform duration-300" 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFWgQkNZAqs1pNAifBQyhC22glD7Wsu49ihoiXtu10tHcmagE4p7XegtXMFlCe5h5Qw9jns30Zri6Zh_mRpXiYLswvHp5OHeyqj-dcuN57gN4jX1_-c_HhL75DMU6cTZwa7Q4iJ2DV-9tePv8-Ue3bfQEht80jbHTI-vQaJ2qSnI4bZ7Jhtx--Wj201iSVMxMEsvjyajUMKNz45IlIFGY727iGI4Mo6_TTd9nm3-GB_cUf-umu71x8uQFZdxYzvaSBU19nlekjnA"
+                />
+                <img 
+                  alt="Ice cream for events" 
+                  className="absolute w-1/2 -bottom-10 -left-10 rounded-2xl shadow-lg border-4 border-white dark:border-navy transform -rotate-12" 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMFMkNLNIeQ7hJVRcVrqFf8O2oeRcLHZrDwwxyMrR3SUOsnKQ2yZSO6vH67i3iK46vORDrrY3vzs0hWmMcyIp_miaMbm4rLWxGPpA8JiCnvaIDVCR5inuZ-BRT4ll0Pv4_PkYKLEALLNtMIhbCXxA6wgjsXN0D93Yi2OvDGPsEW-re9Yp3ukmSu4XgIIEHSgNyTaWbfDuI9d9qyGV5SEfj94m3kM7QAvojCqMD2d0LAERfmeOqScHb6EpPf7XOwPRzeVXD358F5Q"
+                />
+              </div>
+              <div className="relative text-right md:text-left">
+                <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-secondary mb-6" style={{ textShadow: '-3px -3px 0 #FFF, 3px -3px 0 #FFF, -3px 3px 0 #FFF, 3px 3px 0 #FFF, 4px 4px 0 #FF9ECC, 5px 5px 0 #FF9ECC, 6px 6px 0 #FF9ECC' }}>
+                  Any Occasion
+                </h2>
+                <p className="font-body text-lg text-navy/80 dark:text-gray-300 mb-6">
+                  Festivals, college fests, or just a fun get-together? We're here for it! Frosted Fizz brings the party to any event that needs a scoop of joy.
+                </p>
+                <Link to="/inquiry" className="inline-flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-secondary text-navy text-base font-bold leading-normal tracking-wider hover:bg-secondary/80 transition-colors shadow-lg">
+                  <span className="truncate">Get in Touch</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   )

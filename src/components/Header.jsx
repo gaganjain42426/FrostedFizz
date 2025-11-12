@@ -64,6 +64,16 @@ export default function Header() {
               >
                 About Us
               </Link>
+              <Link 
+                to="/services" 
+                className={`text-sm font-medium leading-normal transition-colors ${
+                  isActive('/services') 
+                    ? 'text-primary dark:text-accent font-bold' 
+                    : 'text-navy dark:text-gray-300 hover:text-primary dark:hover:text-primary'
+                }`}
+              >
+                Event Services
+              </Link>
             </div>
           </div>
           
@@ -134,6 +144,17 @@ export default function Header() {
                 }`}
               >
                 About Us
+              </Link>
+              <Link 
+                to="/services" 
+                onClick={closeMobileMenu}
+                className={`text-base font-medium py-3 px-4 rounded-lg transition-colors ${
+                  isActive('/services') 
+                    ? 'bg-primary/20 text-primary font-bold' 
+                    : 'text-navy dark:text-gray-300 hover:bg-primary/10'
+                }`}
+              >
+                Event Services
               </Link>
               <Link 
                 to="/inquiry"
