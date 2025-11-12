@@ -98,27 +98,29 @@ export default function Gallery() {
   const columns = splitIntoColumns(galleryImages, 4)
 
   return (
-    <main className="flex flex-1 justify-center py-5 sm:py-10">
-      <div className="layout-content-container flex flex-col w-full max-w-[1280px] flex-1 px-4">
+    <main className="flex flex-1 justify-center py-16 md:py-24 bg-background-light dark:bg-background-dark">
+      <div className="flex flex-col w-full max-w-[1440px] flex-1 px-6">
         {/* Page Heading */}
-        <div className="flex flex-wrap justify-between gap-3 p-4">
-          <div className="flex w-full flex-col gap-3 text-center">
-            <p className="text-4xl font-black leading-tight tracking-[-0.033em] sm:text-5xl">Our Sweet Moments</p>
-            <p className="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal max-w-2xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <div className="flex w-full flex-col gap-4 text-center">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-navy dark:text-white hero-title-shadow">
+              Our Sweet Moments
+            </h1>
+            <p className="text-navy/70 dark:text-gray-300 text-base md:text-lg font-normal leading-normal max-w-2xl mx-auto">
               A showcase of our dessert and beverage catering at real events. See how we add a touch of magic to every occasion.
             </p>
           </div>
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16 md:mb-24">
           {columns.map((column, colIndex) => (
-            <div key={colIndex} className="grid gap-4">
+            <div key={colIndex} className="grid gap-4 md:gap-6">
               {column.map((image, imgIndex) => (
-                <div key={imgIndex} className="relative group">
-                  <img alt={image.alt} className="h-auto max-w-full rounded-lg" src={image.src} />
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end p-4">
-                    <p className="text-white text-base font-bold leading-tight">{image.caption}</p>
+                <div key={imgIndex} className="relative group rounded-3xl overflow-hidden shadow-lg hover:shadow-primary/30 hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-primary">
+                  <img alt={image.alt} className="h-auto max-w-full" src={image.src} />
+                  <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 md:p-6">
+                    <p className="text-white text-base md:text-lg font-bold leading-tight">{image.caption}</p>
                   </div>
                 </div>
               ))}
@@ -127,8 +129,8 @@ export default function Gallery() {
         </div>
 
         {/* Section Header */}
-        <div className="text-center">
-          <h2 className="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-16 sm:text-3xl">
+        <div className="text-center mb-12">
+          <h2 className="text-navy dark:text-white text-3xl md:text-4xl font-extrabold text-shadow-blue dark:text-shadow-pink">
             What Our Clients Say
           </h2>
         </div>
@@ -136,26 +138,26 @@ export default function Gallery() {
         {/* Testimonials Carousel */}
         <div className="relative w-full overflow-hidden">
           <div className="flex overflow-x-auto snap-x snap-mandatory [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            <div className="flex items-stretch p-4 gap-4 w-full">
+            <div className="flex items-stretch gap-6 w-full px-4">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="flex snap-center h-full flex-1 flex-col gap-4 rounded-xl bg-primary/10 dark:bg-primary/20 p-6 min-w-full sm:min-w-[45%] lg:min-w-[30%]"
+                  className="flex snap-center h-full flex-1 flex-col gap-4 rounded-3xl bg-white dark:bg-navy/40 shadow-lg p-8 min-w-full sm:min-w-[45%] lg:min-w-[30%] border border-gray-200/50 dark:border-white/10"
                 >
-                  <p className="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-relaxed">
+                  <p className="text-navy/70 dark:text-gray-300 text-base font-normal leading-relaxed">
                     {testimonial.text}
                   </p>
                   <div className="flex items-center gap-4 mt-auto pt-4 border-t border-primary/20">
                     <img
                       alt={`Portrait of ${testimonial.name}`}
-                      className="h-12 w-12 rounded-full object-cover"
+                      className="h-12 w-12 rounded-full object-cover border-2 border-primary/30"
                       src={testimonial.avatar}
                     />
                     <div>
-                      <p className="text-text-light dark:text-text-dark text-base font-bold leading-normal">
+                      <p className="text-navy dark:text-white text-base font-bold leading-normal">
                         {testimonial.name}
                       </p>
-                      <p className="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">
+                      <p className="text-navy/70 dark:text-gray-400 text-sm font-normal leading-normal">
                         {testimonial.role}
                       </p>
                     </div>

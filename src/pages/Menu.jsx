@@ -35,32 +35,32 @@ export default function Menu() {
   ]
 
   return (
-    <main className="flex-1 px-4 md:px-10 lg:px-20 py-10 md:py-16">
-      <div className="mx-auto max-w-5xl">
+    <main className="flex-1 px-6 md:px-10 lg:px-20 py-16 md:py-24 bg-background-light dark:bg-background-dark">
+      <div className="mx-auto max-w-7xl">
         {/* Page Heading */}
-        <div className="text-center mb-4">
-          <h1 className="text-gray-900 dark:text-white text-4xl md:text-5xl font-black tracking-tighter">
+        <div className="text-center mb-6">
+          <h1 className="text-navy dark:text-white text-4xl md:text-5xl font-extrabold hero-title-shadow">
             Explore Our Menu
           </h1>
         </div>
         
         {/* Body Text */}
-        <p className="text-gray-600 dark:text-gray-400 text-base md:text-lg font-normal leading-normal text-center mb-10 md:mb-12">
+        <p className="text-navy/70 dark:text-gray-300 text-base md:text-lg font-normal leading-normal text-center mb-12 md:mb-16">
           Available at events and on-demand catering setups.
         </p>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
           {menuItems.map((item, index) => (
             <div
               key={index}
-              className="group relative bg-cover bg-center flex flex-col justify-end rounded-xl aspect-square overflow-hidden transition-transform duration-300 hover:scale-105"
+              className="group relative bg-cover bg-center flex flex-col justify-end rounded-3xl aspect-square overflow-hidden shadow-lg hover:shadow-primary/30 hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-primary"
               style={{
-                backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 60%), url("${item.image}")`
+                backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 60%), url("${item.image}")`
               }}
             >
-              <div className="p-4">
-                <p className="text-white text-base font-bold leading-tight">{item.name}</p>
+              <div className="p-4 md:p-6">
+                <p className="text-white text-base md:text-lg font-bold leading-tight">{item.name}</p>
               </div>
             </div>
           ))}
