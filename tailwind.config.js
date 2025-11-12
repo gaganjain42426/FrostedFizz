@@ -12,7 +12,7 @@ export default {
         "secondary": "#66D6FF",
         "accent": "#FF9ECC",
         "navy": "#071740",
-        "background-light": "#f8f5f7",
+        "background-light": "#FFF7FA",
         "background-dark": "#230f17",
         "text-light": "#181014",
         "text-dark": "#f8f5f7",
@@ -29,7 +29,16 @@ export default {
         "DEFAULT": "0.5rem",
         "lg": "1rem",
         "xl": "1.5rem",
+        "2xl": "2rem",
+        "3xl": "3rem",
         "full": "9999px"
+      },
+      textShadow: {
+        'blue': '6px 6px 0px #66D6FF',
+        'pink': '6px 6px 0px #FF6AA6',
+        'accent': '6px 6px 0px #FF9ECC',
+        'sm-blue': '4px 4px 0px #66D6FF',
+        'sm-pink': '4px 4px 0px #FF6AA6',
       },
       animation: {
         'float-1': 'float 12s ease-in-out infinite',

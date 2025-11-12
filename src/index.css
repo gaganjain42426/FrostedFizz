@@ -34,4 +34,28 @@
   .icon-shadow {
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
+  
+  .hero-title-shadow {
+    text-shadow: 6px 6px 0px #66D6FF;
+  }
+  
+  .dark .hero-title-shadow {
+    text-shadow: 6px 6px 0px #FF9ECC;
+  }
+  
+  .text-shadow-blue {
+    text-shadow: 4px 4px 0px #66D6FF;
+  }
+  
+  .text-shadow-pink {
+    text-shadow: 4px 4px 0px #FF6AA6;
+  }
+  
+  .dark .text-shadow-blue {
+    text-shadow: 4px 4px 0px #FF9ECC;
+  }
+  
+  .dark .text-shadow-pink {
+    text-shadow: 4px 4px 0px #66D6FF;
+  }
 }

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Frosted Fizz - Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#FF6AA6",
+            "secondary": "#66D6FF",
+            "accent": "#FF9ECC",
+            "navy": "#071740",
+            "background-light": "#FFF7FA",
+            "background-dark": "#230f17",
+          },
+          fontFamily: {
+            "display": ["Poppins", "sans-serif"],
+            "body": ["Nunito", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "2xl": "2rem",
+            "3xl": "3rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 24px;
+    }
+    .testimonial-text {
+      text-shadow: 2px 2px 0px #66D6FF, -2px -2px 0px #FF9ECC;
+    }
+    .dark .testimonial-text {
+      text-shadow: 2px 2px 0px #FF9ECC, -2px -2px 0px #66D6FF;
+    }
+    .custom-shape-1 {
+      clip-path: ellipse(80% 60% at 50% 50%);
+    }
+    .custom-shape-2 {
+      clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+    }
+    .custom-shape-3 {
+      clip-path: circle(50% at 50% 50%);
+    }
+    .custom-shape-4 {
+      clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+    }
+    .custom-shape-5 {
+      clip-path: ellipse(60% 80% at 50% 50%);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="max-w-7xl mx-auto">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/50 dark:border-white/10 px-6 py-4">
+<div class="flex items-center gap-3 text-navy dark:text-white">
+<div class="text-primary">
+<span class="material-symbols-outlined" style="font-size: 28px;">
+                icecream
+              </span>
+</div>
+<h2 class="text-xl font-bold">Frosted Fizz</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center gap-8">
+<div class="flex items-center gap-8">
+<a class="text-navy dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-navy dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Our Menu</a>
+<a class="text-primary dark:text-accent text-sm font-bold leading-normal" href="#">Gallery</a>
+<a class="text-navy dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">About Us</a>
+</div>
+</div>
+<div class="hidden md:flex justify-end">
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-navy dark:bg-primary text-white dark:text-navy text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary dark:hover:bg-accent transition-colors" href="#">
+<span class="truncate">Contact</span>
+</a>
+</div>
+<button class="md:hidden text-navy dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<section class="relative bg-background-light dark:bg-navy/10 py-16 md:py-24 overflow-hidden">
+<div class="absolute -top-40 -left-40 w-96 h-96 bg-secondary/20 rounded-full opacity-50 blur-3xl"></div>
+<div class="absolute -bottom-40 -right-40 w-96 h-96 bg-primary/20 rounded-full opacity-50 blur-3xl"></div>
+<div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+<h1 class="text-5xl md:text-7xl font-black text-navy dark:text-white tracking-tighter leading-tight">Sweet Moments</h1>
+<p class="font-body text-navy/80 dark:text-gray-300 text-lg md:text-xl max-w-2xl mt-4 mx-auto">A glimpse into the fun and flavor we bring to every event. See our desserts and happy customers in action!</p>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-16 relative z-10">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
+<div class="col-span-1 md:col-span-2 lg:row-span-2">
+<div class="relative w-full h-full min-h-[200px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-secondary/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-secondary/40 transition-shadow duration-300">
+<img alt="Milkshakes at an event" class="absolute inset-0 w-full h-full object-cover custom-shape-1 scale-125 hover:scale-150 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASN3VbPTx84dgoQwYhscBovVEzlzaeemWdwR8vh-fXZ2LaC6n-A1XNrgQ3FQrS5jFS-sVmw6gLNeThXJw6CbWCuymZK1ESPOjAu1imZf3djDXRDzhuOfwYS_sEd5aUNyutEE3uoBPRVeI95kie1ObObNUPWSt-7WpIqf2fqRzlY1fUxvmZ9VcbABzFGQ1p4jLOBRPbHBi-tlbTeVaC21UUhPnLEOQivTEjfUdvQIkz2bA6AeFIplWHkEmss6R9B8rB6mPI9_EjkA"/>
+</div>
+</div>
+<div class="col-span-1 md:col-span-2 lg:col-span-1">
+<div class="relative w-full aspect-[4/3] bg-primary/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-primary/40 transition-shadow duration-300">
+<img alt="Soft serve ice cream" class="absolute inset-0 w-full h-full object-cover custom-shape-2 scale-125 hover:scale-150 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMFMkNLNIeQ7hJVRcVrqFf8O2oeRcLHZrDwwxyMrR3SUOsnKQ2yZSO6vH67i3iK46vORDrrY3vzs0hWmMcyIp_miaMbm4rLWxGPpA8JiCnvaIDVCR5inuZ-BRT4ll0Pv4_PkYKLEALLNtMIhbCXxA6wgjsXN0D93Yi2OvDGPsEW-re9Yp3ukmSu4XgIIEHSgNyTaWbfDuI9d9qyGV5SEfj94m3kM7QAvojCqMD2d0LAERfmeOqScHb6EpPf7XOwPRzeVXD358F5Q"/>
+</div>
+</div>
+<div class="col-span-2 md:col-span-2 lg:col-span-2 lg:row-span-2">
+<div class="relative w-full h-full min-h-[200px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-accent/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-accent/40 transition-shadow duration-300 flex items-center justify-center">
+<img alt="Catering setup" class="absolute inset-0 w-full h-full object-cover custom-shape-3 scale-125 hover:scale-150 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVGFWSCR7zaS2_l9XBM49k5t_KAL4RV8h44npEFAvOzvW6Q7dd72pXrPh8jKy0yJYoAVc6kEwT3aHATMvebLaNsrjLNl_vdNFGqPNyfYOxGmN2ymVf7BbqdhfPdPdxIHgkShWqARLFZgbQUIlKd98d4MKqiyXWRCfiZTYRSL-wPsdX_RMYD9B6RHNfOWO1K5tGRsvcnY9-V0XuhXkYBy68f6tqwllZnEqn3OripqDJnfCwRCGdqHXJuaN_q6ef8NHw70RfFjlWAg"/>
+<div class="absolute inset-0 bg-navy/30 flex items-center justify-center">
+<button class="w-16 h-16 bg-white/80 rounded-full flex items-center justify-center text-navy backdrop-blur-sm hover:scale-110 transition-transform">
+<span class="material-symbols-outlined !text-4xl">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+<div class="col-span-1 md:col-span-1 lg:col-span-1">
+<div class="relative w-full aspect-[4/3] bg-secondary/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-secondary/40 transition-shadow duration-300">
+<img alt="Falooda dessert" class="absolute inset-0 w-full h-full object-cover custom-shape-4 scale-125 hover:scale-150 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjB_Kvl7Nnl6sGPrTS6hv_NpFAlHTYm1HVJK-UGdbXjeSko3kPXfYbXwe5Un-T8Oxw6-7rCBpt7E07ON6uFCAvDZJE37ajKhqxBC6BfitK94HkOOGtsRg967e5KsJY8pU-H1s7rYnz9AFNFgS_PUVtxTVEs-_XftYlkgNnrvJNB3kSuq--atPaNbTyXEOMZlDs3XL4Ikd7l-LnmTGsPyp2PNx09DKTw6sAcfS4fwvLkf-ADXFWwP76ll7N_df2_mgNo0VWjuz5LA"/>
+</div>
+</div>
+<div class="col-span-1 md:col-span-1 lg:col-span-1">
+<div class="relative w-full aspect-square bg-primary/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-primary/40 transition-shadow duration-300">
+<img alt="Waffle dessert" class="absolute inset-0 w-full h-full object-cover custom-shape-5 scale-125 hover:scale-150 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFWgQkNZAqs1pNAifBQyhC22glD7Wsu49ihoiXtu10tHcmagE4p7XegtXMFlCe5h5Qw9jns30Zri6Zh_mRpXiYLswvHp5OHeyqj-dcuN57gN4jX1_-c_HhL75DMU6cTZwa7Q4iJ2DV-9tePv8-Ue3bfQEht80jbHTI-vQaJ2qSnI4bZ7Jhtx--Wj201iSVMxMEsvjyajUMKNz45IlIFGY727iGI4Mo6_TTd9nm3-GB_cUf-umu71x8uQFZdxYzvaSBU19nlekjnA"/>
+</div>
+</div>
+<div class="col-span-2 md:col-span-2 lg:col-span-2">
+<div class="relative w-full aspect-[16/9] bg-accent/50 rounded-3xl overflow-hidden shadow-lg hover:shadow-accent/40 transition-shadow duration-300">
+<img alt="Group enjoying desserts" class="absolute inset-0 w-full h-full object-cover custom-shape-2 scale-125 hover:scale-150 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIPWXXeFzRPWPBmwuGM_03TVYO8iEn3OlrZfjjVf44MdqwYBz9MY4FfvwvKmF60RIxT3UHOHYS8c4DMaU7QoUMxToGpNd-UEfHAg7iHUtwcxUaZEbB8pY1Zu_5RlCIzsybi90l9PFWsOv1Idxo1k0LxLWS1AwVGJjcAYBIuYRuYXlHT9-Fe_3LjRkOranJUseWuUQqtMurhc33IUal5TYR5oNOGuUfD-0QcjInTxcHm9G4Z7jkLuLYkdKVsPaI-D2izVC-i2e8Fg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="relative bg-background-light dark:bg-background-dark py-16 md:py-24 overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full">
+<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 1440 350">
+<path class="dark:fill-navy/20" d="M0,256L60,245.3C120,235,240,213,360,197.3C480,181,600,171,720,181.3C840,192,960,224,1080,218.7C1200,213,1320,171,1380,149.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" fill="#FFF7FA"></path>
+</svg>
+</div>
+<div class="absolute bottom-0 left-0 w-full h-full transform scale-x-[-1] scale-y-[-1]">
+<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 1440 350">
+<path class="dark:fill-navy/20" d="M0,256L60,245.3C120,235,240,213,360,197.3C480,181,600,171,720,181.3C840,192,960,224,1080,218.7C1200,213,1320,171,1380,149.3L1440,128L1440,350L1380,350C1320,350,1200,350,1080,350C960,350,840,350,720,350C600,350,480,350,360,350C240,350,120,350,60,350L0,350Z" fill="#FFF7FA"></path>
+</svg>
+</div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<h2 class="text-3xl md:text-5xl font-extrabold text-navy dark:text-white mb-12">Happy Clients, Sweet Words</h2>
+<div class="relative">
+<div class="flex flex-col items-center p-8 md:p-12 rounded-3xl bg-white/50 dark:bg-navy/30 backdrop-blur-sm border border-primary/20 dark:border-white/10">
+<span class="material-symbols-outlined text-primary text-5xl mb-4">format_quote</span>
+<p class="font-body text-xl md:text-2xl font-semibold text-navy/80 dark:text-gray-200 leading-relaxed">"Frosted Fizz was the absolute highlight of our wedding! The desserts were incredible and the team was so professional. Our guests are still raving about the milkshakes!"</p>
+<p class="mt-6 font-display font-bold text-lg text-navy dark:text-white testimonial-text">- Priya &amp; Rohan S.</p>
+</div>
+<div class="absolute top-1/2 -left-4 md:-left-8 transform -translate-y-1/2">
+<button class="w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-navy rounded-full flex items-center justify-center text-navy dark:text-white shadow-lg hover:bg-secondary hover:text-white transition-colors">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+</div>
+<div class="absolute top-1/2 -right-4 md:-right-8 transform -translate-y-1/2">
+<button class="w-10 h-10 md:w-12 md:h-12 bg-white dark:bg-navy rounded-full flex items-center justify-center text-navy dark:text-white shadow-lg hover:bg-secondary hover:text-white transition-colors">
+<span class="material-symbols-outlined">arrow_forward_ios</span>
+</button>
+</div>
+</div>
+<div class="flex justify-center gap-2 mt-8">
+<span class="w-3 h-3 bg-primary rounded-full"></span>
+<span class="w-3 h-3 bg-gray-300 dark:bg-navy/50 rounded-full"></span>
+<span class="w-3 h-3 bg-gray-300 dark:bg-navy/50 rounded-full"></span>
+</div>
+</div>
+</section>
+</main>
+<div class="fixed bottom-6 right-6 z-40">
+<a class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 w-14 bg-[#25D366] text-white shadow-lg hover:bg-[#128C7E] transition-colors hover:scale-110" href="https://wa.me/yourphonenumber" target="_blank">
+<svg class="bi bi-whatsapp" fill="currentColor" height="28" viewBox="0 0 16 16" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.068-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+</svg>
+</a>
+</div>
+<footer class="bg-white dark:bg-navy/30 border-t border-gray-200/50 dark:border-white/10">
+<div class="max-w-7xl mx-auto px-6 py-12 text-center">
+<div class="flex flex-col items-center gap-4 text-navy dark:text-white mb-8">
+<div class="text-primary">
+<span class="material-symbols-outlined" style="font-size: 36px;">
+              icecream
+            </span>
+</div>
+<h2 class="text-2xl font-bold">Frosted Fizz</h2>
+<p class="text-navy/70 dark:text-gray-400 font-body">Sweet delights for your memorable events.</p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 mb-8">
+<a class="text-navy/80 dark:text-gray-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-navy/80 dark:text-gray-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Our Menu</a>
+<a class="text-navy/80 dark:text-gray-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Gallery</a>
+<a class="text-navy/80 dark:text-gray-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-navy/80 dark:text-gray-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex justify-center gap-6 mb-8">
+<a class="text-navy/80 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.24 16.24c-1.29 1.29-3.08 2.01-4.99 2.01s-3.7-.72-4.99-2.01C5.02 15.01 4.29 13.22 4.29 11.31c0-1.02.21-1.98.59-2.85l7.55 7.55c-.87.38-1.83.59-2.85.59-1.91 0-3.7-.73-4.99-2.01-1.29-1.29-2.01-3.08-2.01-4.99s.72-3.7 2.01-4.99C6.52 3.29 8.31 2.56 10.22 2.56c1.02 0 1.98.21 2.85.59l-7.55 7.55c.87-.38 1.83-.59 2.85-.59 1.91 0 3.7.73 4.99 2.01 1.29 1.29 2.01 3.08 2.01 4.99s-.72 3.7-2.01 4.99z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="text-navy/80 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.49-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.22-1.95-.55v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21c7.35 0 11.37-6.08 11.37-11.37 0-.17 0-.34-.01-.51.78-.57 1.45-1.29 1.98-2.08z"></path>
+</svg>
+</a>
+</div>
+<div class="border-t border-gray-200/50 dark:border-white/10 pt-6">
+<p class="text-navy/60 dark:text-gray-500 text-sm font-body">© 2024 Frosted Fizz. All Rights Reserved. <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a> · <a class="hover:text-primary transition-colors" href="#">Terms of Service</a></p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
