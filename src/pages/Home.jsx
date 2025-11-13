@@ -67,19 +67,19 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link to="/menu#soft-serve" className="group block bg-white dark:bg-navy/40 rounded-3xl shadow-lg hover:shadow-primary/30 hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-primary">
               <div className="overflow-hidden">
                 <img 
                   alt="Soft Serve Ice Cream" 
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" 
+                  className="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500" 
                   src="/Softy.png"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-navy dark:text-white mb-2">Soft Serve Ice Cream</h3>
-                <p className="font-body text-navy/70 dark:text-gray-400">
-                  Creamy, dreamy, and swirled to perfection. A classic favorite for all ages.
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-navy dark:text-white mb-2">Soft Serve</h3>
+                <p className="font-body text-navy/70 dark:text-gray-400 text-sm">
+                  Creamy, dreamy, and swirled to perfection.
                 </p>
               </div>
             </Link>
@@ -88,14 +88,14 @@ export default function Home() {
               <div className="overflow-hidden">
                 <img 
                   alt="Milkshakes" 
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" 
+                  className="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500" 
                   src="/Milkshake.png"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-navy dark:text-white mb-2">Milkshakes</h3>
-                <p className="font-body text-navy/70 dark:text-gray-400">
-                  Thick, luscious, and blended with premium ingredients. Sip on pure happiness.
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-navy dark:text-white mb-2">Milkshake</h3>
+                <p className="font-body text-navy/70 dark:text-gray-400 text-sm">
+                  Thick, luscious, and blended with premium ingredients.
                 </p>
               </div>
             </Link>
@@ -104,14 +104,94 @@ export default function Home() {
               <div className="overflow-hidden">
                 <img 
                   alt="Waffles" 
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" 
+                  className="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500" 
                   src="/Waffle.png"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-navy dark:text-white mb-2">Waffles</h3>
-                <p className="font-body text-navy/70 dark:text-gray-400">
-                  Crispy on the outside, fluffy on the inside. Served with your favorite toppings.
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-navy dark:text-white mb-2">Waffle</h3>
+                <p className="font-body text-navy/70 dark:text-gray-400 text-sm">
+                  Crispy on the outside, fluffy on the inside.
+                </p>
+              </div>
+            </Link>
+
+            <Link to="/menu#ice-gola" className="group block bg-white dark:bg-navy/40 rounded-3xl shadow-lg hover:shadow-primary/30 hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-primary">
+              <div className="overflow-hidden">
+                <img 
+                  alt="Ice Gola" 
+                  className="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500" 
+                  src="/icegola.png"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-navy dark:text-white mb-2">Ice Gola</h3>
+                <p className="font-body text-navy/70 dark:text-gray-400 text-sm">
+                  Refreshing shaved ice with colorful flavored syrups.
+                </p>
+              </div>
+            </Link>
+
+            <Link to="/menu#brownie" className="group block bg-white dark:bg-navy/40 rounded-3xl shadow-lg hover:shadow-secondary/30 hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-secondary">
+              <div className="overflow-hidden">
+                <img 
+                  alt="Brownie With Ice Cream" 
+                  className="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500" 
+                  src="/brownie.png"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-navy dark:text-white mb-2">Brownie With IceCream</h3>
+                <p className="font-body text-navy/70 dark:text-gray-400 text-sm">
+                  Warm, fudgy brownie topped with cold ice cream.
+                </p>
+              </div>
+            </Link>
+
+            <Link to="/menu#sugarcane" className="group block bg-white dark:bg-navy/40 rounded-3xl shadow-lg hover:shadow-accent/40 hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-accent">
+              <div className="overflow-hidden">
+                <img 
+                  alt="Sugarcane Juice" 
+                  className="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500" 
+                  src="/sugarcane juice.png"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-navy dark:text-white mb-2">Sugarcane Juice</h3>
+                <p className="font-body text-navy/70 dark:text-gray-400 text-sm">
+                  Fresh, natural, and incredibly refreshing.
+                </p>
+              </div>
+            </Link>
+
+            <Link to="/menu#cold-coffee" className="group block bg-white dark:bg-navy/40 rounded-3xl shadow-lg hover:shadow-primary/30 hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-primary">
+              <div className="overflow-hidden">
+                <img 
+                  alt="Cold Coffee" 
+                  className="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500" 
+                  src="/coldcoffee.png"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-navy dark:text-white mb-2">Cold Coffee</h3>
+                <p className="font-body text-navy/70 dark:text-gray-400 text-sm">
+                  Smooth, chilled coffee with a creamy finish.
+                </p>
+              </div>
+            </Link>
+
+            <Link to="/menu#hot-coffee" className="group block bg-white dark:bg-navy/40 rounded-3xl shadow-lg hover:shadow-secondary/30 hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-transparent hover:border-secondary">
+              <div className="overflow-hidden">
+                <img 
+                  alt="Hot Coffee" 
+                  className="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500" 
+                  src="/Hotcoffee.png"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-navy dark:text-white mb-2">Hot Coffee</h3>
+                <p className="font-body text-navy/70 dark:text-gray-400 text-sm">
+                  Aromatic, rich, and perfectly brewed.
                 </p>
               </div>
             </Link>
