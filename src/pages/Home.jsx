@@ -40,17 +40,17 @@ export default function Home() {
               <img 
                 alt="Ice cream dessert presentation for events" 
                 className="relative z-10 w-[70%] max-w-sm lg:max-w-none lg:w-full h-auto object-cover rounded-3xl rotate-6 transition-transform duration-300 hover:rotate-2 hover:scale-105 shadow-2xl" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVGFWSCR7zaS2_l9XBM49k5t_KAL4RV8h44npEFAvOzvW6Q7dd72pXrPh8jKy0yJYoAVc6kEwT3aHATMvebLaNsrjLNl_vdNFGqPNyfYOxGmN2ymVf7BbqdhfPdPdxIHgkShWqARLFZgbQUIlKd98d4MKqiyXWRCfiZTYRSL-wPsdX_RMYD9B6RHNfOWO1K5tGRsvcnY9-V0XuhXkYBy68f6tqwllZnEqn3OripqDJnfCwRCGdqHXJuaN_q6ef8NHw70RfFjlWAg"
+                src="/main.png"
               />
               <img 
                 alt="Milkshake" 
                 className="absolute z-20 w-32 h-32 object-cover rounded-2xl shadow-xl -bottom-8 -left-4 lg:bottom-4 lg:-left-12 rotate-[-15deg] transition-transform duration-300 hover:rotate-[-5deg] hover:scale-110" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuASN3VbPTx84dgoQwYhscBovVEzlzaeemWdwR8vh-fXZ2LaC6n-A1XNrgQ3FQrS5jFS-sVmw6gLNeThXJw6CbWCuymZK1ESPOjAu1imZf3djDXRDzhuOfwYS_sEd5aUNyutEE3uoBPRVeI95kie1ObObNUPWSt-7WpIqf2fqRzlY1fUxvmZ9VcbABzFGQ1p4jLOBRPbHBi-tlbTeVaC21UUhPnLEOQivTEjfUdvQIkz2bA6AeFIplWHkEmss6R9B8rB6mPI9_EjkA"
+                src="/side1.png"
               />
               <img 
                 alt="Indian Dessert Falooda" 
                 className="absolute z-20 w-32 h-32 object-cover rounded-2xl shadow-xl -top-8 -right-4 lg:top-4 lg:-right-12 rotate-[10deg] transition-transform duration-300 hover:rotate-[0deg] hover:scale-110" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjB_Kvl7Nnl6sGPrTS6hv_NpFAlHTYm1HVJK-UGdbXjeSko3kPXfYbXwe5Un-T8Oxw6-7rCBpt7E07ON6uFCAvDZJE37ajKhqxBC6BfitK94HkOOGtsRg967e5KsJY8pU-H1s7rYnz9AFNFgS_PUVtxTVEs-_XftYlkgNnrvJNB3kSuq--atPaNbTyXEOMZlDs3XL4Ikd7l-LnmTGsPyp2PNx09DKTw6sAcfS4fwvLkf-ADXFWwP76ll7N_df2_mgNo0VWjuz5LA"
+                src="/side2.png"
               />
             </div>
           </div>
