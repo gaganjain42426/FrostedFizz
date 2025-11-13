@@ -108,7 +108,7 @@ function BookNow() {
             <div className="absolute bottom-[-3rem] right-[-2rem] w-24 h-24 border-8 border-dashed border-secondary rounded-full rotate-45 opacity-50"></div>
 
             {/* Form */}
-            <form onSubmit={handleSubmit} className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+            <form onSubmit={handleSubmit} className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 max-w-full overflow-hidden">
               <div>
                 <label className="form-label" htmlFor="name">Full Name</label>
                 <input
