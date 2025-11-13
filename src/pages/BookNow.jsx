@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
 
 function BookNow() {
+  const menuItems = [
+    'Soft Serve',
+    'Milkshake',
+    'Waffle',
+    'Ice Gola',
+    'Brownie With IceCream',
+    'Sugarcane Juice',
+    'Cold Coffee',
+    'Hot Coffee'
+  ];
+
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
@@ -12,11 +23,21 @@ function BookNow() {
     notes: ''
   });
 
+  const [selectedItems, setSelectedItems] = useState([]);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
+  };
+
+  const handleItemToggle = (item) => {
+    if (selectedItems.includes(item)) {
+      setSelectedItems(selectedItems.filter(i => i !== item));
+    } else {
+      setSelectedItems([...selectedItems, item]);
+    }
   };
 
   const handleSubmit = (e) => {
@@ -32,6 +53,9 @@ function BookNow() {
     message += `📍 *City:* ${formData.city}\n`;
     if (formData.budget) {
       message += `💰 *Budget:* ₹${formData.budget}\n`;
+    }
+    if (selectedItems.length > 0) {
+      message += `🍦 *Menu Items:* ${selectedItems.join(', ')}\n`;
     }
     if (formData.notes) {
       message += `📝 *Notes:* ${formData.notes}\n`;
@@ -183,6 +207,31 @@ function BookNow() {
                   value={formData.budget}
                   onChange={handleChange}
                 />
+              </div>
+
+              <div className="md:col-span-2">
+                <label className="form-label">Select Menu Items (Optional)</label>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-2">
+                  {menuItems.map((item) => (
+                    <button
+                      key={item}
+                      type="button"
+                      onClick={() => handleItemToggle(item)}
+                      className={`px-4 py-3 rounded-full text-sm font-semibold transition-all duration-300 border-2 ${
+                        selectedItems.includes(item)
+                          ? 'bg-primary text-white border-primary shadow-lg scale-105'
+                          : 'bg-white/80 text-navy border-accent/50 hover:border-primary hover:bg-primary/10'
+                      }`}
+                    >
+                      {item}
+                    </button>
+                  ))}
+                </div>
+                {selectedItems.length > 0 && (
+                  <p className="mt-3 text-sm text-navy/70 font-body ml-4">
+                    Selected: {selectedItems.join(', ')}
+                  </p>
+                )}
               </div>
 
               <div className="md:col-span-2">
