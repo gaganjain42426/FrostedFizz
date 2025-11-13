@@ -27,7 +27,7 @@ export default function Home() {
                 The perfect dessert & beverage partner for your events, bringing sweet delights and refreshing sips to every occasion.
               </p>
               <Link 
-                to="/inquiry"
+                to="/book-now"
                 className="inline-flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 mt-10 bg-primary text-navy text-lg font-bold leading-normal tracking-wider hover:bg-accent transition-all duration-300 ease-in-out shadow-lg shadow-primary/40 hover:shadow-2xl hover:shadow-primary/50 hover:scale-105"
               >
                 <span className="truncate">Book Us for Your Event</span>
