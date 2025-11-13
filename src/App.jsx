@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -11,9 +12,20 @@ import Gallery from './pages/Gallery'
 import EventInquiry from './pages/EventInquiry'
 import BookNow from './pages/BookNow'
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
+
 function App() {
   return (
     <div className="relative flex min-h-screen w-full flex-col">
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
