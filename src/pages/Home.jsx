@@ -73,7 +73,7 @@ export default function Home() {
                 <img 
                   alt="Soft Serve Ice Cream" 
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMFMkNLNIeQ7hJVRcVrqFf8O2oeRcLHZrDwwxyMrR3SUOsnKQ2yZSO6vH67i3iK46vORDrrY3vzs0hWmMcyIp_miaMbm4rLWxGPpA8JiCnvaIDVCR5inuZ-BRT4ll0Pv4_PkYKLEALLNtMIhbCXxA6wgjsXN0D93Yi2OvDGPsEW-re9Yp3ukmSu4XgIIEHSgNyTaWbfDuI9d9qyGV5SEfj94m3kM7QAvojCqMD2d0LAERfmeOqScHb6EpPf7XOwPRzeVXD358F5Q"
+                  src="/Softy.png"
                 />
               </div>
               <div className="p-6">
@@ -89,7 +89,7 @@ export default function Home() {
                 <img 
                   alt="Milkshakes" 
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIPWXXeFzRPWPBmwuGM_03TVYO8iEn3OlrZfjjVf44MdqwYBz9MY4FfvwvKmF60RIxT3UHOHYS8c4DMaU7QoUMxToGpNd-UEfHAg7iHUtwcxUaZEbB8pY1Zu_5RlCIzsybi90l9PFWsOv1Idxo1k0LxLWS1AwVGJjcAYBIuYRuYXlHT9-Fe_3LjRkOranJUseWuUQqtMurhc33IUal5TYR5oNOGuUfD-0QcjInTxcHm9G4Z7jkLuLYkdKVsPaI-D2izVC-i2e8Fg"
+                  src="/Milkshake.png"
                 />
               </div>
               <div className="p-6">
@@ -105,7 +105,7 @@ export default function Home() {
                 <img 
                   alt="Waffles" 
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFWgQkNZAqs1pNAifBQyhC22glD7Wsu49ihoiXtu10tHcmagE4p7XegtXMFlCe5h5Qw9jns30Zri6Zh_mRpXiYLswvHp5OHeyqj-dcuN57gN4jX1_-c_HhL75DMU6cTZwa7Q4iJ2DV-9tePv8-Ue3bfQEht80jbHTI-vQaJ2qSnI4bZ7Jhtx--Wj201iSVMxMEsvjyajUMKNz45IlIFGY727iGI4Mo6_TTd9nm3-GB_cUf-umu71x8uQFZdxYzvaSBU19nlekjnA"
+                  src="/Waffle.png"
                 />
               </div>
               <div className="p-6">
