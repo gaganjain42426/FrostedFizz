@@ -6,7 +6,8 @@ export default function InstagramFeed() {
     'https://www.instagram.com/p/DPb8jUKjIrL/',
     'https://www.instagram.com/p/C7GSDN8hYAG/',
     'https://www.instagram.com/p/DQLroy3EssT/',
-    'https://www.instagram.com/p/DQCulf4EvhG/'
+    'https://www.instagram.com/p/DQCulf4EvhG/',
+    'https://www.instagram.com/reel/DRIO4OeCBQ7/'
   ];
 
   useEffect(() => {
