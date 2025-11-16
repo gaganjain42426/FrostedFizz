@@ -1,8 +1,16 @@
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 export default function Home() {
   return (
-    <main className="flex-grow">
+    <>
+      <SEO 
+        title="Frosted Fizz - Premium Ice Cream & Dessert Catering in Jaipur | Book Now"
+        description="Frosted Fizz offers premium ice cream catering for weddings, birthdays, corporate events in Jaipur. Soft serve, waffles, milkshakes, cold coffee & more. Book your event today!"
+        keywords="ice cream catering Jaipur, dessert catering, event catering, soft serve catering, milkshake catering, waffle catering, wedding catering, birthday party catering"
+        url="https://frostedfizz.com"
+      />
+      <main className="flex-grow">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-background-light dark:bg-background-dark pt-16 pb-24 md:pt-24 md:pb-32 isolate">
         {/* Floating Icons */}
@@ -230,5 +238,6 @@ export default function Home() {
         </div>
       </div>
     </main>
+    </>
   )
 }

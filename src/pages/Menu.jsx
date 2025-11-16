@@ -1,6 +1,15 @@
+import SEO from '../components/SEO'
+
 export default function Menu() {
   return (
-    <main className="flex-grow">
+    <>
+      <SEO 
+        title="Menu - Frosted Fizz | Ice Cream, Waffles, Milkshakes, Cold Coffee & More"
+        description="Explore our delicious menu: Soft Serve Ice Cream, Waffles, Milkshakes, Ice Gola, Brownie with Ice Cream, Sugarcane Juice, Cold Coffee, Hot Coffee. Perfect for events!"
+        keywords="ice cream menu, soft serve, waffles, milkshakes, ice gola, brownie ice cream, sugarcane juice, cold coffee, hot coffee, dessert menu"
+        url="https://frostedfizz.com/menu"
+      />
+      <main className="flex-grow">
       {/* Header Section */}
       <section className="py-16 md:py-24 text-center bg-background-light dark:bg-background-dark">
         <div className="max-w-7xl mx-auto px-6">
@@ -213,5 +222,6 @@ export default function Menu() {
         <div className="h-16"></div>
       </div>
     </main>
+    </>
   )
 }

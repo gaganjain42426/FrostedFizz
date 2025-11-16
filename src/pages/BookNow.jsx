@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
 
 function BookNow() {
   const menuItems = [
@@ -18,7 +19,7 @@ function BookNow() {
     eventType: '',
     guests: '',
     date: '',
-    city: '',
+    eventAddress: '',
     budget: '',
     notes: ''
   });
@@ -50,7 +51,7 @@ function BookNow() {
     message += `🎉 *Event Type:* ${formData.eventType}\n`;
     message += `👥 *Expected Guests:* ${formData.guests}\n`;
     message += `📅 *Event Date:* ${formData.date}\n`;
-    message += `📍 *City:* ${formData.city}\n`;
+    message += `📍 *Event Address:* ${formData.eventAddress}\n`;
     if (formData.budget) {
       message += `💰 *Budget:* ₹${formData.budget}\n`;
     }
@@ -72,8 +73,15 @@ function BookNow() {
   };
 
   return (
-    <div className="min-h-screen bg-background-light pt-20">
-      <section className="relative py-20 md:py-32 overflow-hidden">
+    <>
+      <SEO 
+        title="Book Now - Frosted Fizz | Get a Quote for Your Event Catering"
+        description="Book Frosted Fizz for your wedding, birthday, or corporate event in Jaipur. Get a custom quote for ice cream, desserts, and beverage catering. WhatsApp booking available!"
+        keywords="book event catering, ice cream catering quote, wedding catering booking, birthday party booking, event inquiry, catering services Jaipur"
+        url="https://frostedfizz.com/book-now"
+      />
+      <div className="min-h-screen bg-background-light pt-20">
+        <section className="relative py-20 md:py-32 overflow-hidden">
         {/* Background Blobs */}
         <div className="absolute inset-0 z-0">
           <div className="absolute -top-40 -left-40 w-96 h-96 bg-secondary/20 rounded-full opacity-50 blur-3xl"></div>
@@ -182,15 +190,15 @@ function BookNow() {
                 />
               </div>
 
-              <div>
-                <label className="form-label" htmlFor="city">City</label>
+              <div className="md:col-span-2">
+                <label className="form-label" htmlFor="eventAddress">Event Address</label>
                 <input
                   className="form-input"
-                  id="city"
-                  name="city"
-                  placeholder="e.g. Mumbai"
+                  id="eventAddress"
+                  name="eventAddress"
+                  placeholder="e.g. Hotel Taj Palace, Jaipur"
                   type="text"
-                  value={formData.city}
+                  value={formData.eventAddress}
                   onChange={handleChange}
                   required
                 />
@@ -257,6 +265,7 @@ function BookNow() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 

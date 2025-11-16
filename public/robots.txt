@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://frostedfizz.com/sitemap.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 10
