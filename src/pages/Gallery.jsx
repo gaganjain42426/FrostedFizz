@@ -1,3 +1,5 @@
+import InstagramFeed from '../components/InstagramFeed'
+
 export default function Gallery() {
   const customShapes = [
     'clip-path: ellipse(80% 60% at 50% 50%)',
@@ -229,6 +231,9 @@ export default function Gallery() {
           </div>
         </div>
       </section>
+
+      {/* Instagram Feed */}
+      <InstagramFeed />
     </main>
   )
 }

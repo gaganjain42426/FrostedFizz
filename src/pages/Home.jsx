@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import InstagramFeed from '../components/InstagramFeed'
 
 export default function Home() {
   return (
@@ -237,6 +238,224 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Trust Badges Section */}
+      <section className="bg-white dark:bg-navy/20 py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+            <div className="flex flex-col items-center gap-2 text-center">
+              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
+                <span className="material-symbols-outlined text-primary text-4xl">verified</span>
+              </div>
+              <p className="text-sm font-semibold text-navy dark:text-white">100% Hygienic</p>
+            </div>
+            <div className="flex flex-col items-center gap-2 text-center">
+              <div className="w-20 h-20 rounded-full bg-secondary/10 flex items-center justify-center">
+                <span className="material-symbols-outlined text-secondary text-4xl">shield</span>
+              </div>
+              <p className="text-sm font-semibold text-navy dark:text-white">Licensed & Insured</p>
+            </div>
+            <div className="flex flex-col items-center gap-2 text-center">
+              <div className="w-20 h-20 rounded-full bg-accent/10 flex items-center justify-center">
+                <span className="material-symbols-outlined text-accent text-4xl">star</span>
+              </div>
+              <p className="text-sm font-semibold text-navy dark:text-white">5-Star Rated</p>
+            </div>
+            <div className="flex flex-col items-center gap-2 text-center">
+              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
+                <span className="material-symbols-outlined text-primary text-4xl">support_agent</span>
+              </div>
+              <p className="text-sm font-semibold text-navy dark:text-white">24/7 Support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison Table Section */}
+      <section className="bg-background-light dark:bg-background-dark py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-navy dark:text-white">Why Choose Frosted Fizz?</h2>
+            <p className="mt-4 text-lg text-navy/70 dark:text-gray-300 max-w-2xl mx-auto font-body">
+              Professional catering that makes a difference
+            </p>
+          </div>
+
+          <div className="bg-white dark:bg-navy/40 rounded-3xl shadow-2xl overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="py-4 px-6 text-left font-bold text-lg">Features</th>
+                    <th className="py-4 px-6 text-center font-bold text-lg">Frosted Fizz</th>
+                    <th className="py-4 px-6 text-center font-bold text-lg">Traditional Catering</th>
+                    <th className="py-4 px-6 text-center font-bold text-lg">DIY Desserts</th>
+                  </tr>
+                </thead>
+                <tbody className="text-navy dark:text-gray-200">
+                  <tr className="border-b border-gray-200 dark:border-gray-700">
+                    <td className="py-4 px-6 font-medium">Professional Setup</td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-green-500">check_circle</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-green-500">check_circle</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-red-500">cancel</span></td>
+                  </tr>
+                  <tr className="border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-navy/20">
+                    <td className="py-4 px-6 font-medium">Live Ice Cream Counter</td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-green-500">check_circle</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-red-500">cancel</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-red-500">cancel</span></td>
+                  </tr>
+                  <tr className="border-b border-gray-200 dark:border-gray-700">
+                    <td className="py-4 px-6 font-medium">Hygiene Certified</td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-green-500">check_circle</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-yellow-500">help</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-red-500">cancel</span></td>
+                  </tr>
+                  <tr className="border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-navy/20">
+                    <td className="py-4 px-6 font-medium">Customizable Menu</td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-green-500">check_circle</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-yellow-500">help</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-green-500">check_circle</span></td>
+                  </tr>
+                  <tr className="border-b border-gray-200 dark:border-gray-700">
+                    <td className="py-4 px-6 font-medium">Staff Included</td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-green-500">check_circle</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-green-500">check_circle</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-red-500">cancel</span></td>
+                  </tr>
+                  <tr className="border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-navy/20">
+                    <td className="py-4 px-6 font-medium">Cost-Effective</td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-green-500">check_circle</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-red-500">cancel</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-green-500">check_circle</span></td>
+                  </tr>
+                  <tr className="bg-gray-50 dark:bg-navy/20">
+                    <td className="py-4 px-6 font-medium">Instagram-Worthy Setup</td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-green-500">check_circle</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-yellow-500">help</span></td>
+                    <td className="py-4 px-6 text-center"><span className="material-symbols-outlined text-red-500">cancel</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-white dark:bg-navy/20 py-16 md:py-24">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-navy dark:text-white">Frequently Asked Questions</h2>
+            <p className="mt-4 text-lg text-navy/70 dark:text-gray-300 font-body">
+              Everything you need to know about our catering services
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {/* FAQ Item 1 */}
+            <details className="group bg-background-light dark:bg-navy/40 rounded-2xl shadow-lg overflow-hidden">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-navy dark:text-white text-lg hover:bg-primary/5 transition-colors">
+                <span>How far in advance should I book?</span>
+                <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div className="px-6 pb-6 text-navy/80 dark:text-gray-300 font-body">
+                <p>We recommend booking at least 2-3 weeks in advance for regular events and 1-2 months for weddings or large events (200+ guests). However, we can accommodate last-minute bookings based on availability.</p>
+              </div>
+            </details>
+
+            {/* FAQ Item 2 */}
+            <details className="group bg-background-light dark:bg-navy/40 rounded-2xl shadow-lg overflow-hidden">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-navy dark:text-white text-lg hover:bg-primary/5 transition-colors">
+                <span>Do you provide staff for serving?</span>
+                <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div className="px-6 pb-6 text-navy/80 dark:text-gray-300 font-body">
+                <p>Yes! All our packages include professional staff who will set up, serve, and clean up. Our team is trained in hygiene standards and customer service to ensure your guests have a great experience.</p>
+              </div>
+            </details>
+
+            {/* FAQ Item 3 */}
+            <details className="group bg-background-light dark:bg-navy/40 rounded-2xl shadow-lg overflow-hidden">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-navy dark:text-white text-lg hover:bg-primary/5 transition-colors">
+                <span>Do you travel outside Jaipur?</span>
+                <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div className="px-6 pb-6 text-navy/80 dark:text-gray-300 font-body">
+                <p>Yes, we cater to events across Rajasthan! We cover Jaipur and surrounding areas within 50 km at no extra charge. For events beyond that, there may be a nominal transportation fee. Contact us for details.</p>
+              </div>
+            </details>
+
+            {/* FAQ Item 4 */}
+            <details className="group bg-background-light dark:bg-navy/40 rounded-2xl shadow-lg overflow-hidden">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-navy dark:text-white text-lg hover:bg-primary/5 transition-colors">
+                <span>Can you customize flavors and menu items?</span>
+                <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div className="px-6 pb-6 text-navy/80 dark:text-gray-300 font-body">
+                <p>Absolutely! We love creating custom experiences. You can choose specific flavors for ice cream, milkshake varieties, topping options, and even themed presentations. Just let us know your preferences when booking.</p>
+              </div>
+            </details>
+
+            {/* FAQ Item 5 */}
+            <details className="group bg-background-light dark:bg-navy/40 rounded-2xl shadow-lg overflow-hidden">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-navy dark:text-white text-lg hover:bg-primary/5 transition-colors">
+                <span>What equipment do you bring?</span>
+                <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div className="px-6 pb-6 text-navy/80 dark:text-gray-300 font-body">
+                <p>We bring everything needed: ice cream machines, refrigeration units, serving counters, utensils, cups, napkins, and decorative setup. All you need to provide is electricity and a suitable space (covered area preferred).</p>
+              </div>
+            </details>
+
+            {/* FAQ Item 6 */}
+            <details className="group bg-background-light dark:bg-navy/40 rounded-2xl shadow-lg overflow-hidden">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-navy dark:text-white text-lg hover:bg-primary/5 transition-colors">
+                <span>What is your cancellation policy?</span>
+                <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div className="px-6 pb-6 text-navy/80 dark:text-gray-300 font-body">
+                <p>Cancellations made 7+ days before the event receive a full refund. Cancellations within 3-7 days receive 50% refund. Cancellations within 3 days are non-refundable. We understand emergencies happen, so please contact us to discuss your situation.</p>
+              </div>
+            </details>
+
+            {/* FAQ Item 7 */}
+            <details className="group bg-background-light dark:bg-navy/40 rounded-2xl shadow-lg overflow-hidden">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-navy dark:text-white text-lg hover:bg-primary/5 transition-colors">
+                <span>Are your ingredients fresh and hygienic?</span>
+                <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div className="px-6 pb-6 text-navy/80 dark:text-gray-300 font-body">
+                <p>Yes! We use only premium quality ingredients, sourced fresh daily. Our preparation follows strict hygiene standards, and all our staff is trained in food safety. We maintain temperature-controlled storage throughout the event.</p>
+              </div>
+            </details>
+
+            {/* FAQ Item 8 */}
+            <details className="group bg-background-light dark:bg-navy/40 rounded-2xl shadow-lg overflow-hidden">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-navy dark:text-white text-lg hover:bg-primary/5 transition-colors">
+                <span>What are your payment terms?</span>
+                <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div className="px-6 pb-6 text-navy/80 dark:text-gray-300 font-body">
+                <p>We require a 30% advance payment to confirm your booking, with the remaining 70% due on the event day. We accept all payment methods: cash, UPI (PhonePe, Google Pay, Paytm), bank transfer, and cards.</p>
+              </div>
+            </details>
+          </div>
+
+          <div className="mt-10 text-center">
+            <p className="text-navy/70 dark:text-gray-300 font-body mb-4">Still have questions?</p>
+            <Link 
+              to="/book-now"
+              className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-bold rounded-full hover:bg-accent transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Get in Touch
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Instagram Feed */}
+      <InstagramFeed />
     </main>
     </>
   )

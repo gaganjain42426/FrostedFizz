@@ -54,6 +54,16 @@ export default function Header() {
               Events
             </Link>
             <Link 
+              to="/gallery" 
+              className={`text-base font-medium leading-normal transition-colors ${
+                isActive('/gallery') 
+                  ? 'text-primary dark:text-accent font-semibold' 
+                  : 'text-navy dark:text-gray-300 hover:text-primary dark:hover:text-primary'
+              }`}
+            >
+              Gallery
+            </Link>
+            <Link 
               to="/about" 
               className={`text-base font-medium leading-normal transition-colors ${
                 isActive('/about') 
@@ -131,6 +141,17 @@ export default function Header() {
                 }`}
               >
                 Events
+              </Link>
+              <Link 
+                to="/gallery" 
+                onClick={closeMobileMenu}
+                className={`text-base font-medium py-3 px-4 rounded-lg transition-colors ${
+                  isActive('/gallery') 
+                    ? 'bg-primary/20 text-primary font-bold' 
+                    : 'text-navy dark:text-gray-300 hover:bg-primary/10'
+                }`}
+              >
+                Gallery
               </Link>
               <Link 
                 to="/about" 
